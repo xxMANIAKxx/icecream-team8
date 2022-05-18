@@ -1,0 +1,80 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <form action="" class="modal__form">
+            <div class="modal__form__container">
+                <h3 class="modal__form__title">Zostaw swoje dane w formularzu poniżej</h3>
+
+                <label class="modal__form__label" for="imie">Imie
+                    <div class="modal__form__label__container">
+                        <input class="modal__form__input" type="text" required name="imie" id="imie" />
+                        <img class="modal__form__svg" src="" alt="" width="11" height="11" />
+                    </div>
+                </label>
+
+                <label class="modal__form__label" for="tel">Telefon
+                    <div class="modal__form__label__container">
+                        <input class="modal__form__input" type="tel" required name="tel" id="tel" />
+                        <img class="modal__form__svg" src="" alt="" width="11" height="11" />
+                    </div>
+                </label>
+
+                <label class="modal__form__label" for="mail">Email
+                    <div class="modal__form__label__container">
+                        <input class="modal__form__input" type="email" required name="email" id="mail" />
+                        <img class="modal__form__svg" src="" alt="" width="11" height="11" />
+                    </div>
+                </label>
+
+                <label class="modal__form__label" for="comment">Wybierz produkt:
+                    <select class="modal__form__select" name="product" id="product" placeholder="wybierz produkt"
+                        required>
+                        <option value="ice cream">ICE CREAM</option>
+                        <option value="ice coffee">ICE COFFEE</option>
+                        <option value="milkshakes">MILKSHAKES</option>
+                    </select>
+                </label>
+                <label class="modal__form__label" for="comment">Wybierz smak:
+                    <select class="modal__form__select" name="product" id="product" placeholder="wybierz smak" required>
+                        <option value="vanilla">Wanilia</option>
+                        <option value="chocolate">Czekolada</option>
+                        <option value="caramel">Karmel</option>
+                    </select>
+                </label>
+
+                <label class="modal__form__label" for="comment">Wybierz ilość:
+                    <input type="number" class="modal__form__select" name="quantity" id="quantity" placeholder="ilość"
+                        required>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                    </input>
+                </label>
+
+                <div class="modal__form__policy__container">
+                    <label class="modal__form__policy__label" for="policy">
+                        <input class="modal__form__policy__input" type="checkbox" unchecked required name="policy"
+                            id="policy" />
+                        <span class="modal__form__policy__checkmark">
+                            <img class="modal__form__policy__checkmark__svg" src="" alt=""
+                                width="13" height="16" />
+                        </span>
+                        <div class="modal__form__policy__text">
+                            <span>Oświadczam iż akceptuję</span>
+                            <a class="modal__form__policy__link" href="#">Regulamin</a>
+                            <span>i</span>
+                            <a class="modal__form__policy__link" href="#">Politykę Prywatności.</a>
+                        </div>
+                    </label>
+                </div>
+
+                <button class="modal__form__btn" type="submit">Wyślij</button>
+            </div>
+        </form>
+        <button class="modal__btn__close" data-modal-close>
+            <img src="" alt="" width="11" height="11" />
+        </button>
+    </div>
+</div>
