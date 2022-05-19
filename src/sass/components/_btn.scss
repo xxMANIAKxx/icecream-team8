@@ -1,0 +1,18 @@
+.btn {
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--white {
+    font-family: $main-font;
+    color: $vivid-pink;
+    background-color: $white;
+}
+
+.btn--pink {
+    font-family: $main-font;
+    color: $white;
+    background-color: $vivid-pink;
+}
+
