@@ -3,11 +3,21 @@
     align-items: center;
     margin: 0 auto;
 
+    .team & {
+        padding-top: 121px;
+        padding-bottom: 98px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
     .container {
         max-width: 768px;
+
+        .team & {
+            padding-top: 122px;
+            padding-bottom: 112px;
+        }
     }
 }
 
@@ -15,5 +25,10 @@
 @media screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
+
+        .team & {
+            padding-top: 127px;
+            padding-bottom: 119px;
+        }
     }
 }
