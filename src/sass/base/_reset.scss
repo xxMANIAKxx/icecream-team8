@@ -1,9 +1,9 @@
 :root {
-    // font-family: $main-font;
+    font-family: $main-font;
 }
 
 body {
-    font-family: $main-font;
+    font-family: var(--main-font);
 }
 
 h1,
