@@ -15,8 +15,7 @@
     .container {
 
         .products & {
-            padding-top: 122px;
-            padding-bottom: 112x;
+            padding: 122px 34px 112px 34px;
         }
     }
 }
@@ -28,8 +27,7 @@
         max-width: 1280px;
 
         .products & {
-            padding-top: 127px;
-            padding-bottom: 119px;
+            padding: 127px 116px 119px 117px;
         }
     }
 }
