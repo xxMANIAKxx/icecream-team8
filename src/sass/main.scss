@@ -4,13 +4,16 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-// @import './utils/variables';
 
-// @import "./base/reset";
+@import './utils/variables';
+
+@import "./base/reset";
 @import "./base/typography";
 
-// @import "./components/main-headers";
+@import "./components/main-headers";
 @import "./components/icons";
+@import "./components/btn";
+
+@import "./layout/products";
 
 // @import './example';
-// @import "./base/typography";
