@@ -1,9 +1,9 @@
 <header class="header">
     <div class="container header__content">
-        <a class="nav__logo" href="index.html">
-            <img src="" alt="ice-cream-logo" />
+        <a class="navigation__logo" href="index.html">
+            <img src="images/hero_header/main-logo.svg" alt="ice-cream-logo" />
         </a>
-        <a href="" class="hamburger__lines hide-for-desktop">
+        <a id="menuHamburger" href="javascript:void(0)" class="hamburger__lines hide-for-desktop">
             <span class="line line__one"></span>
             <span class="line line__two"></span>
             <span class="line line__three"></span>
@@ -29,32 +29,32 @@
                 </ul>
             </nav>
         </div>
-        <button class="button__buy hide-for-mobile">
+        <button class="button__buy hide-for-mobile" data-modal-open2>
             Buy now
-            <img src="" alt="arrow-right" />
+            <img src="images/hero_header/buy-now.png" alt="arrow-right" />
         </button>
 
         <div class="navigation__mobile is-hidden--menu">
-            <nav class="nav">
-                <button class="button__buy">
+            <nav class="navigation">
+                <button class="button__buy" data-modal-open>
                     Buy now
-                    <img src="" alt="arrow-right" />
+                    <img src="images/hero_header/buy-now.png" alt="arrow-right" />
                 </button>
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a class="navigation__link navigation__link--active" href="index.html">Home</a>
                     </li>
                     <li class="navigation__item">
-                        <a class="navigation__link" href="#about">About us</a>
+                        <a id="navAbout" class="navigation__link" href="#about">About us</a>
                     </li>
                     <li class="nav__item">
-                        <a class="navigation__link" href="#how">How it’s made?</a>
+                        <a id="navHow" class="navigation__link" href="#how">How it’s made?</a>
                     </li>
                     <li class="nav__item">
-                        <a class="navigation__link" href="#products">Our products</a>
+                        <a id="navProducts" class="navigation__link" href="#products">Our products</a>
                     </li>
                     <li class="nav__item">
-                        <a class="navigation__link" href="#contacts">Contact</a>
+                        <a id="navContact" class="navigation__link" href="#contacts">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -81,12 +81,12 @@
             </div>
             <div class="title__content__shops hide-for-tablet">
                 <div class="title__content__shops__cafes">
-                    <img src="" alt="white-circle" />
+                    <img src="images/hero_header/white-circle.png" alt="white-circle" />
                     <span>16</span>
                     cafes
                 </div>
                 <div class="title__content__shops__foodTrucks">
-                    <img src="" alt="white-circle" />
+                    <img src="images/hero_header/white-cirkle.png" alt="white-circle" />
                     <span>23</span>
                     food trucks
                 </div>
@@ -94,7 +94,7 @@
         </div>
         <div class="hero__description hide-for-tablet">
             <div class="hero__description__bioeco">
-                <img class="bioeco__milk" src="" alt="jar-with-milk" />
+                <img class="bioeco__milk" src="images/hero_header/milk-desktop.png" alt="jar-with-milk" />
                 <div class="bioeco__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et
@@ -104,25 +104,25 @@
                             <source srcset="" media="(min-width: 1280px)" />
                             <source srcset="" media="(min-width: 768px)" />
                             <source srcset="" media="(min-width: 480px)" />
-                            <img src="" alt="read-more-button" />
+                            <img src="images/arrow-right.png" alt="read-more-button" />
                         </picture>
                     </button>
                 </div>
             </div>
         </div>
-        <img class="hero__circle" src="" alt="big-pink-circle" />
+        <img class="hero__circle" src="images/hero_header/pink-cirkle.png" alt="big-pink-circle" />
 
         <picture>
-            <source srcset="" media="(min-width: 1280px)" />
-            <source srcset="" media="(min-width: 768px)" />
-            <source srcset="" media="(min-width: 480px)" />
-            <img class="hero__ice-cream" src="" alt="big-ice-cream" />
+            <source srcset="images/hero_header/ice-desktop.png 1x" media="(min-width: 1280px)" />
+            <source srcset="images/hero_header/ice-tablet.png 1x" media="(min-width: 768px)" />
+            <source srcset="images/hero_header/ice-mobile.png 1x" media="(min-width: 480px)" />
+            <img class="hero__ice-cream" src="images/hero_header/ice-desktop.png" alt="big-ice-cream" />
         </picture>
         <picture>
-            <source srcset="" media="(min-width: 1280px)" />
-            <source srcset="" media="(min-width: 768px)" />
+            <source srcset="images/hero_header/girl-desktop.png 1x" media="(min-width: 1280px)" />
+            <source srcset="images/hero_header/girl-tablet.png 1x" media="(min-width: 768px)" />
             <source srcset="" media="(min-width: 480px)" />
-            <img class="hero__tasty hide-for-mobile" src="" alt="girl-with-ice-cream" />
+            <img class="hero__tasty hide-for-mobile" src="images/hero_header/girl-desktop.png" alt="girl-with-ice-cream" />
         </picture>
     </div>
 </section>

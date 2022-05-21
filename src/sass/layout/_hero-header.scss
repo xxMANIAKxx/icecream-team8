@@ -1,0 +1,546 @@
+.header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 90;
+  
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 6px;
+    }
+
+  }
+  
+  .open {
+    .hamburger__lines {
+      position: fixed;
+      top: 23px;
+      right: 28px;
+      margin-right: 0;
+      .line {
+        background: #ffffff;
+      }
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  
+  .hamburger__lines {
+    display: block;
+    height: 21px;
+    min-width: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+    margin-right: 20px;
+    transition: transform 250ms ease-in-out;
+  
+    .line {
+      display: block;
+      height: 3px;
+      width: 108%;
+      border-radius: 10px;
+      transform-origin: 3px 1px;
+      margin-bottom: 3px;
+      background: $vivid-pink;
+    }
+  
+    .line__one {
+      transform-origin: 4% 213%;
+      transition: transform 250ms ease, background 250ms ease;
+    }
+  
+    .line__two {
+      transition: transform 250ms ease, background 250ms ease;
+    }
+  
+    .line__three {
+      transform-origin: 23% -33%;
+      transition: transform 250ms ease, background 250ms ease;
+    }
+  }
+  
+  .hamburgerOpen {
+    position: fixed;
+    right: 15px;
+  }
+  
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  
+    &--menu {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .navigation__mobile {
+    position: fixed;
+    background-color: #E17992;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 250ms ease;
+    overflow-y: auto;
+    z-index: 99;
+  
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      gap: 19px;
+      height: 100%;
+      overflow: auto;
+  
+      .button__buy {
+        gap: 28px;
+        padding: 13px 55px;
+      }
+  
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+      }
+  
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 11px 0 11px 21px;
+        border-bottom: 1px solid #e18298;
+        width: 100%;
+  
+        &:first-of-type {
+          border-top: 1px solid #e18298;
+        }
+      }
+    }
+  }
+  
+  .navigation {
+    &__logo {
+      margin-right: auto;
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 35px;
+    }
+    &__link {
+      color: $white;
+      font-size: $font-size-16;
+      font-weight: $font-weight-700;
+      line-height: 21px;
+      white-space: nowrap;
+      transition: color 250ms ease;
+  
+      &:hover,
+      &:focus {
+        color: $vivid-pink;
+      }
+  
+      &--active {
+        color: $vivid-pink;
+      }
+    }
+  }
+  
+  .button {
+    &__buy {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 34px;
+      color: $vivid-pink;
+      background-color: $white;
+      font-size: $font-size-16;
+      font-weight: $font-weight-700;
+      gap: 12px;
+      border-radius: 25px;
+      border: none;
+      white-space: nowrap;
+      transition: background-color 250ms ease;
+  
+      &:hover,
+      &:focus {
+        background-color: #ECEBEB;
+      }
+    }
+  }
+  
+  .noScroll {
+    position: fixed;
+    overflow: hidden;
+  }
+  
+  .hide-for-desktop {
+    display: flex;
+  }
+  
+  .hide-for-mobile {
+    display: none;
+  }
+  
+  .hide-for-tablet {
+    display: none;
+  }
+
+  
+  @media screen and (min-width: 480px) {
+    .hide-for-mobile {
+      display: flex;
+    }
+    .hamburger-lines {
+      margin-right: 0;
+    }
+    .header__content {
+      padding-top: 37px;
+    }
+  }
+  
+  @media screen and (min-width: 970px) {
+    .hide-for-desktop {
+      display: none;
+    }
+    .hide-for-tablet {
+      display: flex;
+    }
+  
+    .header__content {
+      justify-content: space-between;
+    }
+  
+    .navigation__logo {
+      margin-right: 0;
+    }
+  }
+
+
+
+  .hero {
+    height: 502px;
+    background-color: $icecream-pink;
+    overflow: hidden;
+    padding-top: 83px;
+    &__content {
+      position: relative;
+      height: 100%;
+    }
+  
+    &__buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 13px;
+      font-size: $font-size-08;
+      font-weight: $font-weight-700;
+      gap: 12px;
+      border-radius: 25px;
+      border: none;
+      white-space: nowrap;
+      transition: background-color 250ms ease;
+  
+      &--products {
+        background-color: $vivid-pink;
+  
+        a {
+          color: $white;
+        }
+  
+        &:hover,
+        &:focus {
+          background-color: $crimson;
+        }
+      }
+      &--about {
+        background-color: $white;
+        a {
+          color: $vivid-pink;
+        }
+        &:hover,
+        &:focus {
+          background-color: #ECEBEB;
+        }
+      }
+    }
+  }
+  
+  .title__content__main {
+    position: relative;
+    z-index: 2;
+    width: 290px;
+    text-transform: uppercase;
+    padding-top: 137px;
+  }
+  
+  .hero__title {
+    font-family: $head-font;
+    font-size: $font-size-48;
+    line-height: 46.32px;
+    color: $vivid-pink;
+    width: 216px;
+    padding-bottom: 20px;
+  
+    &--small {
+      display: flex;
+      font-family: $head-font;
+      color: $white;
+      font-size: 26px;
+      line-height: 29.77px;
+    }
+  }
+  
+  .hero__circle {
+    position: absolute;
+    top: 23px;
+    margin-left: 18px;
+    width: 346px;
+    height: 344px;
+    object-fit: cover;
+  }
+  
+  .hero__ice-cream {
+    position: absolute;
+    width: 171px;
+    height: 410px;
+    top: 30px;
+    margin-left: 98px;
+  }
+  
+  @media screen and (min-width: 480px) {
+    .hero__tasty {
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hero {
+      height: 449px;
+    }
+    .title__content__main {
+      padding-top: 15px;
+    }
+    .hero__ice-cream {
+      width: 143px;
+      height: 370px;
+      top: -5px;
+      right: 218px;
+    }
+    .hero__circle {
+      width: 358px;
+      height: 351px;
+      right: 120px;
+      top: -61px;
+    }
+    .hero__content {
+      .hide-for-tablet {
+        display: flex;
+      }
+      .title__content__shops {
+        position: absolute;
+        right: 43px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        gap: 12px;
+        color: $white;
+        font-family: $main-font;
+  
+        .title__content__shops__cafes {
+          font-size: $font-size-08;
+          line-height: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+  
+          img {
+            position: absolute;
+            top: -10px;
+            right: -9px;
+          }
+  
+          span {
+            font-size: $font-size-28;
+            position: relative;
+            color: $vivid-pink;
+            font-family: $head-font;
+          }
+        }
+
+        .title__content__shops__foodTrucks {
+          font-size: $font-size-08;
+          line-height: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: relative;
+          
+          img {
+            position: absolute;
+            top: -10px;
+            right: -9px;
+          }
+  
+          span {
+            font-size: $font-size-28;
+            position: relative;
+            color: $vivid-pink;
+            font-family: $head-font;
+          }
+        }
+      }
+    }
+    .hero__description__bioeco {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      align-items: flex-end;
+      bottom: 0;
+      left: 34px;
+      padding-bottom: 28px;
+  
+      .bioeco__milk {
+        width: 126px;
+        height: 128px;
+      }
+  
+      .bioeco__description {
+        max-width: 114px;
+        font-size: $font-size-08;
+        line-height: 12px;
+        display: flex;
+        flex-direction: column;
+        color: $white;
+      }
+      .bioeco__description__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: $white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .hero {
+      height: 665px;
+  
+      &__btn {
+        padding: 12px 20px;
+      }
+    }
+    .hero__circle {
+      width: 538px;
+      height: 538px;
+      right: 198px;
+      top: -29px;
+    }
+    .hero__ice-cream {
+      width: 236px;
+      height: 557px;
+      right: 381px;
+      top: 25px;
+    }
+    .hero__tasty {
+      height: 238px;
+      width: 293px;
+    }
+    .title__content__main {
+      padding-top: 84px;
+    }
+    .hero__title {
+      font-size: $font-size-58;
+      width: 233px;
+      line-height: 52.49px;
+    }
+    .hero__title--small {
+      font-size: 38px;
+      line-height: 43.51px;
+    }
+    .hero__btn {
+      font-size: $font-size-14;
+    }
+  
+    .hero__content {
+      .title__content__shops {
+        gap: 17px;
+        .cafes {
+          font-size: 14px;
+          line-height: 18.29px;
+          gap: 10px;
+  
+          span {
+            font-size: 46px;
+          }
+        }
+  
+        .foodTrucks {
+          font-size: $font-size-14;
+          line-height: 18.29px;
+          gap: 10px;
+  
+          span {
+            font-size: 46px;
+          }
+        }
+      }
+    }
+  
+    .hero__description__bioeco {
+      align-items: center;
+  
+      .bioeco__milk {
+        width: 188px;
+        height: 189px;
+      }
+  
+      .bioeco__description {
+        max-width: 200px;
+        font-size: 14px;
+        line-height: 19.6px;
+      }
+      .bioeco__description__btn {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
