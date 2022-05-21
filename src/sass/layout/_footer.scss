@@ -1,0 +1,80 @@
+.flex{
+    display: flex;
+}
+
+.social-media__link {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: $light-pink2;
+    width: 34px;
+    height: 34px;
+}
+
+.social-media__item {
+    &:not(:last-child) {
+            margin-right: 28px;
+        }
+}
+
+
+.social-media__icon {
+    fill: $white;
+    width: 34px;
+    height: 34px;
+}
+.icon--github {
+    padding: 6.59px;
+}
+
+.icon--telegram {
+    padding: 8.53px 7.47px 8.53px 5.33px;
+}
+
+.icon--facebook {
+    padding: 6.4px 11.2px 6.4px 12px;
+}
+.footer__contact, .footer__phone {
+    font-weight: 700;
+        font-size: 12px;
+        line-height: 1.833;
+        text-align: right;
+}
+.footer__phone {
+    color: $vivid-pink;
+}
+.rights{
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #E1E1E1;
+    padding: 22px 0px 25px 0px;
+}
+.footer__rights{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    /* or 21px */
+    text-align: center;
+    color: #907E82;
+}
+
+.footer__contact{
+    margin-bottom: 43px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .social-media, .social-media__link {
+            width: 32px;
+            height: 32px;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+
+}
+
+@media screen and (min-width: 1280px) {
+
+}
