@@ -3,31 +3,51 @@
         <div class="about__headline">
             <p class="about__headline__slogan">tradition and love</p>
             <h1 class="about__headline__main">how it's made?</h1>
-        </div>
-        <div class="about__img__and__text">
-            <div class="about__cow__img">
-                <picture class="about__list--photo">
-                    <source srcset="" media="(min-width: 1280px)" />
-                    <source srcset="" media="(min-width: 768px)" />
-                    <source srcset="" media="(min-width: 480px)" />
-                    <img class="about__list--photo" src="" alt="cow" />
-                </picture>
-            </div>
-            <div class="about__description">
-                <p class="about__description__one">
-                    Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-                    lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-                </p>
-                <p class="about__description__two">
-                    Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-                    in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-                    maximus. Cras massa nibh, tincidunt.
-                </p>
-                <p class="about__description__three">Aliquam erat volutpat. Aenean accumsan.</p>
-                <button type="button" class="about__btn">
-                    Read more <img class="about__btn__arrow" src="" alt="read-more" />
-                </button>
+            <div class="about__img__and__text">
+                <div class="about__cow__img">
+                    <picture class="about__list--photo">
+                        <source 
+                            media="(min-width: 480px)"
+                            srcset="./images/cow_mobile.png 1x, ./images/cow_mobile@2x.png 2x"  
+                        />
+                        <source 
+                            media="(min-width: 768px)"
+                            srcset="./images/cow_tablet.png 1x, ./images/cow_tablet@2x.png 2x"
+                        />
+                        <source 
+                            media="(min-width: 1280px)"
+                            srcset="./images/cow_desktop.png 1x, ./images/cow_desktop@2x.png 2x"  
+                        />  
+                        <img 
+                            class="about__list--photo" 
+                            src="./images/cow_tablet.png" 
+                            alt="cow" 
+                        />
+                    </picture>
+                </div>
+                <div class="about__description">
+                    <p class="about__description__one">
+                        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+                        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+                    </p>
+                    <p class="about__description__two">
+                        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+                        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+                        maximus. Cras massa nibh, tincidunt.
+                        <br />
+                        <br />
+                        Aliquam erat volutpat. Aenean accumsan.
+                    </p>
+                    <button type="button" class="about__btn">
+                        Read more 
+                        <svg class="about_icon">
+                            <use href="./images/sprite_about.svg#icon-Vector-1"></use>
+                        </svg>
+                        <img class="about__btn__arrow" src="" alt="read-more" />
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
