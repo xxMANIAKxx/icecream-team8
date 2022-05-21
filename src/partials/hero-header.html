@@ -82,12 +82,12 @@
             <div class="title__content__shops hide-for-tablet">
                 <div class="title__content__shops__cafes">
                     <img src="images/hero_header/white-circle.png" alt="white-circle" />
-                    <span>16</span>
+                    <span class="title__content__shops__cafes__nr">16</span>
                     cafes
                 </div>
                 <div class="title__content__shops__foodTrucks">
-                    <img src="images/hero_header/white-cirkle.png" alt="white-circle" />
-                    <span>23</span>
+                    <img src="images/hero_header/white-circle.png" alt="white-circle" />
+                    <span class="title__content__shops__foodTrucks__nr">23</span>
                     food trucks
                 </div>
             </div>
@@ -96,15 +96,14 @@
             <div class="hero__description__bioeco">
                 <img class="bioeco__milk" src="images/hero_header/milk-desktop.png" alt="jar-with-milk" />
                 <div class="bioeco__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et
+                    <span class="bioeco__description__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</span>
                     <button class="bioeco__description__btn">
                         <!--nie jestem pewna, że to powinno być tak:)-->
                         <picture>
-                            <source srcset="" media="(min-width: 1280px)" />
-                            <source srcset="" media="(min-width: 768px)" />
-                            <source srcset="" media="(min-width: 480px)" />
-                            <img src="images/arrow-right.png" alt="read-more-button" />
+                            <source srcset="images/arrow-right.png 1x" media="(min-width: 1280px)" />
+                            <source srcset="images/arrow-right-tablet.png 1x" media="(min-width: 768px)" />
+                            <source srcset="images/arrow-right-tablet.png 1x" media="(min-width: 480px)" />
+                            <img src="images/arrow-right.png" alt="read-more-button" width="26" height="26"/>
                         </picture>
                     </button>
                 </div>
@@ -121,7 +120,7 @@
         <picture>
             <source srcset="images/hero_header/girl-desktop.png 1x" media="(min-width: 1280px)" />
             <source srcset="images/hero_header/girl-tablet.png 1x" media="(min-width: 768px)" />
-            <source srcset="" media="(min-width: 480px)" />
+            <source srcset="images/hero_header/girl-tablet.png 1x" media="(min-width: 480px)" />
             <img class="hero__tasty hide-for-mobile" src="images/hero_header/girl-desktop.png" alt="girl-with-ice-cream" />
         </picture>
     </div>
