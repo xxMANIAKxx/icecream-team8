@@ -71,8 +71,7 @@ img {
 
 @media (min-width: 768px) and (max-width: 1280px) {
   .products .container {
-    padding-top: 122px;
-    padding-bottom: 112x;
+    padding: 122px 34px 112px 34px;
   }
 }
 
@@ -81,25 +80,17 @@ img {
     max-width: 1280px;
   }
   .products .container {
-    padding-top: 127px;
-    padding-bottom: 119px;
+    padding: 127px 116px 119px 117px;
   }
 }
 
 .main-header {
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.147;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
   font-family: "Titan One", sans-serif;
 }
 
 .secondary-header {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.166;
   text-transform: uppercase;
   color: #FFA5BA;
   font-family: "Titan One", sans-serif;
@@ -143,7 +134,7 @@ img {
 }
 
 .products__list--photo {
-  position: relative;
+  margin-top: -113px;
 }
 
 .products__item {
@@ -184,6 +175,28 @@ img {
   margin-top: 22px;
 }
 
+.products__dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.products__dot:hover, .products__dot:focus {
+  background-color: #D41443;
+}
+
+.products__dot--container {
+  text-align: center;
+  margin-top: 30px;
+  background: transparent;
+}
+
 .products__description {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -192,6 +205,7 @@ img {
   letter-spacing: 0.04em;
   line-height: 152%;
   color: #ffffff;
+  margin: 30px 41px;
 }
 
 .products__btn {
@@ -200,14 +214,36 @@ img {
   background-color: transparent;
   padding: 0;
   margin-bottom: 41px;
+  border-radius: 50%;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.products__btn:hover, .products__btn:focus {
+  border: 1px solid #D41443;
+}
+
+@media screen and (max-width: 768px) {
+  .products__item:not(:last-child) {
+    margin-bottom: 130px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .products__title {
-    margin-bottom: 31px;
+  .products__label {
+    font-size: 18px;
+    line-height: 1.167;
   }
-  .products__item:not(:last-child) {
-    margin-bottom: 17px;
+  .products__title {
+    font-size: 34px;
+    line-height: 1.147;
+    margin-top: 15px;
+    margin-bottom: 144px;
+  }
+  .products__description {
+    margin: 30px 39px 30px 41px;
   }
   .products__description {
     margin: 30px 39px 30px 41px;
@@ -224,11 +260,23 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 0;
+    max-width: 1050px;
+    margin: 0 auto;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
+  .products__label {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+  .products__title {
+    font-size: 48px;
+    line-height: 1.146;
+    margin-top: 15px;
+    margin-bottom: 150px;
+  }
   .products__item:first-child {
     margin-right: 10px;
   }
@@ -239,8 +287,11 @@ img {
   .products__item:last-child {
     margin-left: 10px;
   }
-  .products__title {
-    margin-bottom: 39px;
+  .products__name {
+    margin-top: 30px;
+  }
+  .products__list--photo {
+    margin-top: -111px;
   }
   .products__description {
     margin-bottom: 40px;
@@ -251,6 +302,16 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+  .products__label {
+    font-size: 30px;
+    line-height: 1.133;
+  }
+  .products__title {
+    font-size: 58px;
+    line-height: 1.138;
+    margin-top: 15px;
+    margin-bottom: 259px;
+  }
   .products__item:first-child {
     margin-right: 15px;
   }
@@ -261,8 +322,14 @@ img {
   .products__item:last-child {
     margin-left: 15px;
   }
-  .products__title {
-    margin-bottom: 49px;
+  .products__list--photo {
+    margin-top: -210px;
+  }
+  .products__name {
+    margin-top: 38px;
+  }
+  .products__dot--container {
+    margin-top: 32px;
   }
   .products__description {
     margin-bottom: 62px;
