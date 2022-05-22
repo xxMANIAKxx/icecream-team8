@@ -28,12 +28,14 @@
     border-radius: 6px;
    
     &--cafe{
+        width: 73px;
         background-color: #F0D1A5;
-        margin-right: 214px;
+        //margin-right: 214px;
     }
     &--foodtruck{
+        width: 138px;
         background-color: #C2E297;
-        margin-right: 149px;
+        //margin-right: 149px;
     }
 }
 .contacts__localization{
@@ -78,4 +80,20 @@
     margin-left: 43px;
     color: #907E82;
     margin-top: 32px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .contacts__flex {
+        flex-direction: column;
+    }
+    .contacts__background{
+        margin-top: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1280px) {
+    .contacts__background{
+        width: 220px;
+        height: 544px;
+        left: 274px;
+        top: 3402px;
+    }
 }
