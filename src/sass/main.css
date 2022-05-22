@@ -122,6 +122,23 @@ img {
   fill: currentColor;
 }
 
+.btn {
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--white {
+  font-family: "DM Sans", sans-serif;
+  color: #D41443;
+  background-color: #ffffff;
+}
+
+.btn--pink {
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  background-color: #D41443;
+}
 
 .header {
   background-color: transparent;
@@ -653,6 +670,104 @@ img {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1280px) {
+  .title__content__main {
+    width: 162px;
+    margin-top: 15px;
+    margin-left: 34px;
+  }
+  .hero__title {
+    font-size: 34px;
+    line-height: 29px;
+    letter-spacing: 0.06em;
+  }
+  .hero__title--small {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 162px;
+  }
+  .title__content__shops {
+    position: absolute;
+    right: 64px;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 24px;
+    gap: 12px;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+  }
+  .title__content__shops .title__content__shops__cafes {
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    line-height: 18px;
+    letter-spacing: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    margin-bottom: 18px;
+  }
+  .title__content__shops .title__content__shops__cafes img {
+    position: absolute;
+    top: -9px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+  }
+  .title__content__shops .title__content__shops__cafes .title__content__shops__cafes__nr {
+    font-size: 28px;
+    position: relative;
+    color: #D41443;
+    font-family: "Titan One", sans-serif;
+    margin-bottom: 2px;
+  }
+  .title__content__shops .title__content__shops__foodTrucks {
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    line-height: 18px;
+    letter-spacing: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+  }
+  .title__content__shops .title__content__shops__foodTrucks img {
+    position: absolute;
+    top: -9px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+  }
+  .title__content__shops .title__content__shops__foodTrucks .title__content__shops__foodTrucks__nr {
+    font-size: 28px;
+    position: relative;
+    color: #D41443;
+    font-family: "Titan One", sans-serif;
+    margin-bottom: 2px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     height: 449px;
@@ -888,23 +1003,6 @@ img {
     height: 26px;
     cursor: pointer;
   }
-  
-.btn {
-  border-radius: 22px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn--white {
-  font-family: "DM Sans", sans-serif;
-  color: #D41443;
-  background-color: #ffffff;
-}
-
-.btn--pink {
-  font-family: "DM Sans", sans-serif;
-  color: #ffffff;
-  background-color: #D41443;
 }
 
 .products__list {
@@ -1131,12 +1229,17 @@ img {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  background-color: #FFF5F6;
+}
+
+.is-hidden {
+  display: none;
 }
 
 .advantages__item--data {
   font-family: "Titan One", sans-serif;
   font-size: 36px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 1.139;
   letter-spacing: 0.04em;
   color: #D41443;
@@ -1145,7 +1248,7 @@ img {
 .advantages__item--description {
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.667;
   letter-spacing: 0em;
   color: #000000;
@@ -1158,6 +1261,27 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: left;
+    padding-left: 20px;
+    padding-top: 45px;
+    padding-bottom: 59px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .advantages__item--description {
+    margin-bottom: 38px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .advantages__item--img {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .advantages__item--data {
+    padding-bottom: 16px;
   }
 }
 
@@ -1250,6 +1374,12 @@ img {
   }
 }
 
+.contacts {
+  background: url("../images/contacts-background.png");
+  background-color: #FFF5F6;
+  background-repeat: no-repeat;
+}
+
 .contacts__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1286,13 +1416,13 @@ img {
 }
 
 .contacts__category--cafe {
+  width: 73px;
   background-color: #F0D1A5;
-  margin-right: 214px;
 }
 
 .contacts__category--foodtruck {
+  width: 138px;
   background-color: #C2E297;
-  margin-right: 149px;
 }
 
 .contacts__localization {
@@ -1343,8 +1473,94 @@ img {
   margin-top: 32px;
 }
 
+.contacts__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 86px;
+}
+
+.contacts__btn {
+  width: 198px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: none;
+  background: #D41342;
+  border-radius: 22px;
+  color: #FFFFFF;
+}
+
+.contacts__btn--rev {
+  width: 198px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: none;
+  margin-left: 15px;
+  background: #FFFFFF;
+  border-radius: 22px;
+  color: #D41443;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .contacts__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__background {
+    margin-top: 20px;
+    width: 220px;
+    height: 574px;
+    left: 274px;
+    top: 3402px;
+    margin-left: 0px;
+  }
+  .contacts__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts__btn--rev {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .contacts__background {
+    width: 220px;
+    height: 574px;
+    left: 274px;
+    top: 3402px;
+  }
+}
+
 .footer {
   background-color: #FFF5F6;
+  padding-top: 113px;
 }
 
 .footer__social-media {
@@ -1470,6 +1686,9 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
+  .footer {
+    padding-top: 158px;
+  }
   .secondary-header--style {
     width: 340px;
     font-size: 26px;
@@ -1491,6 +1710,9 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 165px;
+  }
   .secondary-header--style {
     width: 474px;
     font-size: 30px;
