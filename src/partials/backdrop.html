@@ -1,0 +1,89 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <form action="" class="modal__form">
+            <div class="modal__form__container">
+                <h3 class="modal__form__title">Zostaw swoje dane w formularzu poniżej</h3>
+
+                <label class="modal__form__label" for="imie">Imię
+                    <div class="modal__form__label__container">
+                        <input class="modal__form__input" type="text" required name="imie" id="imie" />
+                        <svg class="modal__form__svg" width="18" height="18">
+                            <use href="images/symbol-defs.svg#person-form" width="18" height="18"></use>
+                        </svg>
+                    </div>
+                </label>
+
+                <label class="modal__form__label" for="tel">Telefon
+                    <div class="modal__form__label__container">
+                        <input class="modal__form__input" type="tel" required name="tel" id="tel" />
+                        <svg class="modal__form__svg" width="18" height="18">
+                            <use href="images/symbol-defs.svg#phone-form" width="18" height="18"></use>
+                        </svg>
+                    </div>
+                </label>
+
+                <label class="modal__form__label" for="mail">Email
+                    <div class="modal__form__label__container">
+                        <input class="modal__form__input" type="email" required name="email" id="mail" />
+                        <svg class="modal__form__svg" width="18" height="18">
+                            <use href="images/symbol-defs.svg#email-form" width="18" height="18"></use>
+                        </svg>
+                    </div>
+                </label>
+
+                <label class="modal__form__label" for="comment">Wybierz produkt:
+                    <select class="modal__form__select" name="product" id="product" placeholder="wybierz produkt"
+                        required>
+                        <option value="ice cream">Ice Cream</option>
+                        <option value="ice coffee">Ice Coffee</option>
+                        <option value="milkshakes">Milkshakes</option>
+                    </select>
+                </label>
+
+                <label class="modal__form__label" for="comment">Wybierz smak:
+                    <select class="modal__form__select" name="product" id="product" placeholder="wybierz smak" required>
+                        <option value="vanilla">Wanilia</option>
+                        <option value="chocolate">Czekolada</option>
+                        <option value="caramel">Karmel</option>
+                    </select>
+                </label>
+
+                <label class="modal__form__label" for="comment">Wybierz ilość:
+                    <select class="modal__form__select" name="product" id="product" placeholder="wybierz iłość" required>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                    </select>
+                </label>
+
+                <div class="modal__form__policy__container">
+                    <label class="modal__form__policy__label" for="policy">
+                        <input class="modal__form__policy__input" type="checkbox" unchecked required name="policy"
+                            id="policy" />
+                        <span class="modal__form__policy__checkmark">
+                            <svg class="modal__form__policy__checkmark__svg" width="11" height="11">
+                                <use href="images/symbol-defs.svg#checkbox" width="11" height="11"></use>
+                            </svg>
+                        </span>
+                        <div class="modal__form__policy__text">
+                            <span>Oświadczam iż akceptuję</span>
+                            <a class="modal__form__policy__link" href="#">Regulamin</a>
+                            <span>i</span>
+                            <a class="modal__form__policy__link" href="#">Politykę Prywatności.</a>
+                        </div>
+                    </label>
+                </div>
+
+                <button class="modal__form__btn" type="submit">Wyślij</button>
+            </div>
+        </form>
+        <button class="modal__btn__close" data-modal-close>
+            <svg class="" width="11" height="11">
+                <use href="images/symbol-defs.svg#close" width="11" height="11"></use>
+            </svg>
+        </button>
+    </div>
+</div>
