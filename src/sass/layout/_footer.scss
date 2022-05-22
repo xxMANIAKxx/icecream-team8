@@ -20,19 +20,16 @@
     letter-spacing: 0.04em;
 }
 
-.social-media {
-    position: relative;
-    
-}
-
 .social-media{
     display: inline-flex;
+    flex-direction: row-reverse;
+    padding-left: 100%;
     margin-bottom: 46px;
 }
 
 .social-media__item {
 
-    &:not(:last-child) {
+    &:not(:first-child) {
         margin-right: 28px;
     }
 }
@@ -125,6 +122,7 @@
             font-size: 48px;
             letter-spacing: 0.06em;
         }
+        
 
     .bottom {
             padding: 29px 0px 18px 0px;
