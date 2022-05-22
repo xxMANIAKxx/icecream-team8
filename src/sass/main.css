@@ -57,13 +57,20 @@ img {
 
 .container {
   padding: 0 20px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 
 .products .container {
   padding-top: 121px;
   padding-bottom: 98px;
+  text-align: center;
+}
+
+.customer-reviews .container {
+  padding-bottom: 86px;
   text-align: center;
 }
 
@@ -901,10 +908,17 @@ img {
 }
 
 .products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .products__list--photo {
@@ -913,9 +927,16 @@ img {
 }
 
 .products__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 24px;
 }
 
@@ -951,6 +972,7 @@ img {
   background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -982,8 +1004,11 @@ img {
   padding: 0;
   margin-bottom: 41px;
   border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
+  border: 1px solid transparent;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .products__btn:hover, .products__btn:focus {
@@ -1014,9 +1039,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .products__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 1050px;
     margin: 0 auto;
     margin-bottom: 0;
@@ -1097,6 +1127,8 @@ img {
 }
 
 .advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -1121,12 +1153,106 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .advantages__list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left;
   }
 }
 
+.customer__slideshow--container {
+  position: relative;
+}
+
+.customer__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 29px;
+}
+
+.customer__quote {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: #E1E1E1;
+          text-decoration-color: #E1E1E1;
+  text-underline-offset: 6px;
+}
+
+.customer__quote--container {
+  background-color: #FAFAFA;
+  position: relative;
+  padding: 28px 50px 20px;
+}
+
+.customer__quote--icon {
+  width: 54px;
+  height: 40px;
+  color: #E1E1E1;
+}
+
+.customer__dot {
+  height: 4px;
+  width: 4px;
+  margin: 0 5px;
+  background-color: #c7133e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.customer__dot--container {
+  text-align: center;
+  margin-top: 30px;
+  background: transparent;
+}
+
+.customer__name {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.customer-reviews__dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 9px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.customer-reviews__dot:hover, .customer-reviews__dot:focus,
+.customer-reviews__dot .active {
+  background-color: #D31342;
+}
+
+.customer-reviews__dot--container {
+  text-align: center;
+  margin-top: 30px;
+  background: transparent;
+}
+
+@media screen and (min-width: 1280px) {
+  .customer__quote--container {
+    padding: 47px 89px 39px 87px;
+  }
+}
+
 .contacts__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1137,7 +1263,8 @@ img {
   left: 115px;
   top: 4056px;
   background: #FFFFFF;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
 
@@ -1221,8 +1348,13 @@ img {
 }
 
 .footer__social-media {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   padding-left: 100%;
   margin-bottom: 46px;
   width: 32px;
@@ -1241,9 +1373,15 @@ img {
 }
 
 .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .social-media__item:not(:first-child) {
@@ -1251,10 +1389,16 @@ img {
 }
 
 .social-media__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 50%;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #FEA5BB;
   width: 34px;
   height: 34px;
@@ -1283,9 +1427,16 @@ img {
 }
 
 .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid #E1E1E1;
   padding: 22px 0px 25px 0px;
 }
