@@ -14,10 +14,28 @@
         text-align: center;
     }
 
-    &_description-one {
+    &__description-one {
         font-family: $main-font;
         color: $black;
         font-style: normal;
-        font-weight: ;
+        font-weight: $font-weight-500;
+        font-size: $font-size-12;
+        line-height: 1.583;
+        text-align: left;
+        margin-bottom: 47px;
+        width: 220px;
+        height: 79px;
     }
+
+    &__description__two {
+        color: $shade-pink;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: $font-weight-500;
+        font-size: $font-size-12;
+        line-height: 1.583;
+        text-align: left;
+        margin-bottom: 47px;
+    }
+
 }
