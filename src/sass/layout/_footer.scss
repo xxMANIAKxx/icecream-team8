@@ -1,5 +1,6 @@
 .footer {
     background-color: $lavender-blush;
+    margin-top: 113px;
 
     &__social-media {
             display: inline-flex;
@@ -92,6 +93,8 @@
 
 
 @media screen and (max-width: 768px) {
+    
+
     .footer .container {
         display: block;
     }
@@ -118,6 +121,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
+    .footer {
+        margin-top: 158px;
+    }
+
     .secondary-header--style {
         width: 340px;
         font-size: 26px;
@@ -144,6 +151,10 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .footer {
+        margin-top: 165px;
+    }
+
     .secondary-header--style {
         width: 474px;
         font-size: 30px;
