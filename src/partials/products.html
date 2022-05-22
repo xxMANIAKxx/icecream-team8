@@ -1,54 +1,87 @@
 <section class="products">
   <div class="container">
     <a id="products" class="products__label secondary-header">100% natural</a>
-    <h2 class="products__title main-header"></span>products</h2>
+    <h2 class="products__title main-header">products</h2>
     <ul class="products__list">
       <li class="products__item list">
         <picture class="products__list--photo">
-          <source srcset="" media="(min-width: 1280px)" />
-          <source srcset="" media="(min-width: 768px)" />
-          <source srcset="" media="(min-width: 480px)" />
+          <source srcset="images/products/ice-cream-desktop.png" media="(min-width: 1280px)" />
+          <source srcset="images/products/ice-cream-tablet.png" media="(min-width: 768px)" />
+          <source srcset="images/products/ice-cream.png" media="(min-width: 320px)" />
           <img class="products__img" src="images/products/ice-cream.png" alt="ice-cream-photo" />
         </picture>
         <h3 class="products__name">ice cream</h3>
+        <div class="products__dot--container">
+          <span class="products__dot" onclick="currentSlide(1)"></span>
+          <span class="products__dot" onclick="currentSlide(2)"></span>
+          <span class="products__dot" onclick="currentSlide(3)"></span>
+        </div>
         <p class="products__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
+          ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="products__btn" type="button">
-          <img class="icon__arrow" src="" alt="right-arrow-icon" width="40" height="40" />
+        <button class="products__btn" type="button" class="next" onclick="plusSlides(1)">
+          <img
+            class="icon__arrow"
+            src="images/arrow-right.png"
+            alt="right-arrow-icon"
+            width="40"
+            height="40"
+          />
         </button>
       </li>
       <li class="products__item list">
         <picture class="products__list--photo">
-          <source srcset="" media="(min-width: 1280px)" />
-          <source srcset="" media="(min-width: 768px)" />
-          <source srcset="" media="(min-width: 480px)" />
+          <source srcset="images/products/ice-coffee-desktop.png" media="(min-width: 1280px)" />
+          <source srcset="images/products/ice-coffee-tablet.png" media="(min-width: 768px)" />
+          <source srcset="images/products/ice-coffee.png" media="(min-width: 320px)" />
           <img class="products__img" src="images/products/ice-coffee.png" alt="ice-coffee-photo" />
         </picture>
         <h3 class="products__name">ice coffee</h3>
+        <div class="products__dot--container">
+          <span class="products__dot" onclick="currentSlide(1)"></span>
+          <span class="products__dot" onclick="currentSlide(2)"></span>
+          <span class="products__dot" onclick="currentSlide(3)"></span>
+        </div>
         <p class="products__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
+          ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="products__btn" type="button">
-          <img class="icon__arrow" src="" alt="right-arrow-icon" width="40" height="40" />
+        <button class="products__btn" type="button" class="next" onclick="plusSlides(1)">
+          <img
+            class="icon__arrow"
+            src="images/arrow-right.png"
+            alt="right-arrow-icon"
+            width="40"
+            height="40"
+          />
         </button>
       </li>
       <li class="products__item list">
         <picture class="products__list--photo">
-          <source srcset="" media="(min-width: 1280px)" />
-          <source srcset="" media="(min-width: 768px)" />
-          <source srcset="" media="(min-width: 480px)" />
+          <source srcset="images/products/milkshake-desktop.png" media="(min-width: 1280px)" />
+          <source srcset="images/products/milkshake-tablet.png" media="(min-width: 768px)" />
+          <source srcset="images/products/milkshake.png" media="(min-width: 320px)" />
           <img class="products__img" src="images/products/milkshake.png" alt="milkshake-photo" />
         </picture>
         <h3 class="products__name">milkshakes</h3>
+        <div class="products__dot--container">
+          <span class="products__dot" onclick="currentSlide(1)"></span>
+          <span class="products__dot" onclick="currentSlide(2)"></span>
+          <span class="products__dot" onclick="currentSlide(3)"></span>
+        </div>
         <p class="products__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et
+          ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="products__btn" type="button">
-          <img class="icon__arrow" src="" alt="right-arrow-icon" width="40" height="40" />
+        <button class="products__btn" type="button" class="next" onclick="plusSlides(1)">
+          <img
+            class="icon__arrow"
+            src="images/arrow-right.png"
+            alt="right-arrow-icon"
+            width="40"
+            height="40"
+          />
         </button>
       </li>
     </ul>
