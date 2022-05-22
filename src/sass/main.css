@@ -310,6 +310,7 @@ img {
 
 .navigation__logo {
   margin-right: auto;
+  margin-left: 46px;
 }
 
 .navigation__list {
@@ -364,6 +365,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 13px 34px;
+  margin-right: 115px;
   color: #D41443;
   background-color: #ffffff;
   font-family: "DM Sans", sans-serif;
@@ -602,8 +604,10 @@ img {
     font-family: "DM Sans", sans-serif;
   }
   .hero__content .title__content__shops .title__content__shops__cafes {
-    font-size: 8px;
-    line-height: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: normal;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -615,21 +619,25 @@ img {
         -ms-flex-align: end;
             align-items: flex-end;
     position: relative;
+    margin-bottom: 38px;
   }
   .hero__content .title__content__shops .title__content__shops__cafes img {
     position: absolute;
-    top: -10px;
-    right: -9px;
+    top: -19px;
+    right: -17px;
   }
-  .hero__content .title__content__shops .title__content__shops__cafes span {
-    font-size: 28px;
+  .hero__content .title__content__shops .title__content__shops__cafes .title__content__shops__cafes__nr {
+    font-size: 46px;
     position: relative;
     color: #D41443;
     font-family: "Titan One", sans-serif;
+    margin-bottom: 12px;
   }
   .hero__content .title__content__shops .title__content__shops__foodTrucks {
-    font-size: 8px;
-    line-height: 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: normal;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -644,14 +652,15 @@ img {
   }
   .hero__content .title__content__shops .title__content__shops__foodTrucks img {
     position: absolute;
-    top: -10px;
-    right: -9px;
+    top: -19px;
+    right: -17px;
   }
-  .hero__content .title__content__shops .title__content__shops__foodTrucks span {
-    font-size: 28px;
+  .hero__content .title__content__shops .title__content__shops__foodTrucks .title__content__shops__foodTrucks__nr {
+    font-size: 46px;
     position: relative;
     color: #D41443;
     font-family: "Titan One", sans-serif;
+    margin-bottom: 12px;
   }
   .hero__description__bioeco {
     display: -webkit-box;
@@ -715,21 +724,25 @@ img {
   .hero__circle {
     width: 538px;
     height: 538px;
-    right: 198px;
+    right: 267px;
     top: -29px;
   }
   .hero__ice-cream {
     width: 236px;
     height: 557px;
-    right: 381px;
+    right: 450px;
     top: 25px;
   }
   .hero__tasty {
     height: 238px;
     width: 293px;
+    margin-right: 109px;
   }
   .title__content__main {
     padding-top: 84px;
+    padding-left: 115px;
+    padding-bottom: 25px;
+    width: 450px;
   }
   .hero__title {
     font-size: 58px;
@@ -744,32 +757,91 @@ img {
     font-size: 14px;
   }
   .hero__content .title__content__shops {
+    margin-top: 74px;
+    margin-right: 97px;
     gap: 17px;
-    margin-top: 116px;
   }
-  .hero__content .title__content__shops__cafes {
+  .hero__content .title__content__shops {
+    position: absolute;
+    right: 43px;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 24px;
+    gap: 12px;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+  }
+  .hero__content .title__content__shops .title__content__shops__cafes {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    gap: 10px;
+    letter-spacing: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    margin-bottom: 38px;
   }
-  .hero__content .title__content__shops__cafes__nr {
+  .hero__content .title__content__shops .title__content__shops__cafes img {
+    position: absolute;
+    top: -19px;
+    right: -17px;
+  }
+  .hero__content .title__content__shops .title__content__shops__cafes .title__content__shops__cafes__nr {
     font-size: 46px;
+    position: relative;
+    color: #D41443;
+    font-family: "Titan One", sans-serif;
+    margin-bottom: 12px;
   }
-  .hero__content .title__content__shops__foodTrucks {
+  .hero__content .title__content__shops .title__content__shops__foodTrucks {
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     line-height: 18px;
-    gap: 10px;
+    letter-spacing: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
   }
-  .hero__content .title__content__shops__foodTrucks__nr {
+  .hero__content .title__content__shops .title__content__shops__foodTrucks img {
+    position: absolute;
+    top: -19px;
+    right: -17px;
+  }
+  .hero__content .title__content__shops .title__content__shops__foodTrucks .title__content__shops__foodTrucks__nr {
     font-size: 46px;
+    position: relative;
+    color: #D41443;
+    font-family: "Titan One", sans-serif;
+    margin-bottom: 12px;
   }
   .hero__description__bioeco {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 45px;
+    padding-left: 77px;
+    padding-bottom: 45px;
   }
   .hero__description__bioeco .bioeco__milk {
     width: 188px;
