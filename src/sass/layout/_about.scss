@@ -1,0 +1,23 @@
+.section_about {
+    background-color: $lavender-blush;
+}
+
+.about {
+    &__first-header {
+        color: $light-pink;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: $font-weight-400;
+        font-size: $font-size-18;
+        line-height: 1.167;
+        text-align: center;
+    }
+
+    &_description-one {
+        font-family: $main-font;
+        color: $black;
+        font-style: normal;
+        font-weight: ;
+    }
+}
