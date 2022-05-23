@@ -41,8 +41,6 @@
             position: relative;
             background-color: $gray2;
             z-index: -2;
-            padding-left: 50px;
-                padding-right: 50px;
         }
 
         &--icon {
@@ -121,25 +119,27 @@
     }
 }
 
-@media (min-width: 320px) and (min-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
     .customer {
-
+    
         &__quote {
             &--container {
-                padding: 28px 50px 20px;
+                padding: 40px 50px 20px;
             }
         }
     }
 }
 
-@media (min-width: 768px) and (min-width: 1280px) {
+
+
+@media (min-width: 768px) and (max-width: 1280px) {
 
     .customer {
-
+    
         &__quote {
             &--container {
-                padding: 47px 54px 28px 60px;
+                padding: 46px 36px 28px 60px;
             }
         }
     }
@@ -151,7 +151,7 @@
 
         &__quote {
             &--container {
-                padding: 47px 54px 32px 59px;
+                padding: 45px 54px 32px 59px;
             }
         }
     }
