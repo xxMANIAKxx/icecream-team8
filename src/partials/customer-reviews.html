@@ -1,87 +1,89 @@
- <section class="customer-reviews">
-      <div class="slideshow-container">
-        <!-- Full-width slides/quotes -->
-        <div class="customer__slideshow">
-          <img
-            class="customer__img"
-            src="./images/customer1.png"
-            srcset="./images/customer1@2x.png 2x"
-            alt="person__one"
-          />
-          <div class="customer__quote--container">
-            <svg class="customer__quote--icon icon">
-              <use href="./images/symbol-defs.svg#icon-quote_mobile"></use>
-            </svg>
-            <span class="customer__quote">
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </span>
-          </div>
-
-          <div class="customer__dot--container">
-            <span class="customer__dot"></span>
-            <span class="customer__dot"></span>
-            <span class="customer__dot"></span>
-          </div>
-          <p class="customer__name">Emily, Los Angeles</p>
+<section class="customer-reviews">
+  <div class="container">
+    <div class="slideshow-container">
+      <!-- Full-width slides/quotes -->
+      <div class="customer__slideshow">
+        <img
+          class="customer__img"
+          src="./images/customer1.png"
+          srcset="./images/customer1@2x.png 2x"
+          alt="person__one"
+        />
+        <div class="customer__quote--container">
+          <span class="customer__quote">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </span>
         </div>
-        <div class="customer__slideshow">
-          <img
-            class="customer__img"
-            src="./images/customer2.png"
-            srcset="./images/customer2@2x.png 2x"
-            alt="person__one"
-          />
-          <div class="customer__quote--container">
-            <svg class="customer__quote--icon icon">
-              <use href="./images/symbol-defs.svg#icon-quote_mobile"></use>
-            </svg>
-            <span class="customer__quote">
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </span>
-          </div>
 
-          <div class="customer__dot--container">
-            <span class="customer__dot"></span>
-            <span class="customer__dot"></span>
-            <span class="customer__dot"></span>
-          </div>
-          <p class="customer__name">Olivia, San Fransisco</p>
+        <div class="customer__dot--container">
+          <span class="customer__dot"></span>
+          <span class="customer__dot"></span>
+          <span class="customer__dot"></span>
         </div>
-        <div class="customer__slideshow">
-          <img
-            class="customer__img"
-            src="./images/customer3.png"
-            srcset="./images/customer3@2x.png 2x"
-            alt="person__one"
-          />
-          <div class="customer__quote--container">
-            <svg class="customer__quote--icon icon">
-              <use href="./images/symbol-defs.svg#icon-quote_mobile"></use>
-            </svg>
-            <span class="customer__quote">
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </span>
-          </div>
-
-          <div class="customer__dot--container">
-            <span class="customer__dot"></span>
-            <span class="customer__dot"></span>
-            <span class="customer__dot"></span>
-          </div>
-          <p class="customer__name">Charlotte, New York</p>
-        </div>
+        <p class="customer__name">Emily, Los Angeles</p>
       </div>
+      <div class="customer__slideshow">
+        <img
+          class="customer__img"
+          src="./images/customer2.png"
+          srcset="./images/customer2@2x.png 2x"
+          alt="person__one"
+        />
+        <div class="customer__quote--container">
+          <span class="customer__quote">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </span>
+        </div>
 
-      <!-- Dots/bullets/indicators -->
-      <div class="customer-reviews__dot--container">
-        <span class="customer-reviews__dot" onclick="currentSlide(1)"></span>
-        <span class="customer-reviews__dot" onclick="currentSlide(2)"></span>
-        <span class="customer-reviews__dot" onclick="currentSlide(3)"></span>
+        <div class="customer__dot--container">
+          <span class="customer__dot"></span>
+          <span class="customer__dot"></span>
+          <span class="customer__dot"></span>
+        </div>
+        <p class="customer__name">Olivia, San Fransisco</p>
       </div>
-    </section>
+      <div class="customer__slideshow">
+        <img
+          class="customer__img"
+          src="./images/customer3.png"
+          srcset="./images/customer3@2x.png 2x"
+          alt="person__one"
+        />
+        <div class="customer__quote--container">
+          <span class="customer__quote">
+            Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+          </span>
+        </div>
+
+        <div class="customer__dot--container">
+          <span class="customer__dot"></span>
+          <span class="customer__dot"></span>
+          <span class="customer__dot"></span>
+        </div>
+        <p class="customer__name">Charlotte, New York</p>
+      </div>
+    </div>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="customer-reviews__dot--container">
+      <span class="customer-reviews__dot" onclick="currentSlide(1)">
+        <svg class="customer-reviews__icon">
+          <use href="./images/symbol-defs.svg#icon-home_mobile"></use>
+        </svg>
+      </span>
+      <span class="customer-reviews__dot" onclick="currentSlide(2)">
+        <svg class="customer-reviews__icon">
+          <use href="./images/symbol-defs.svg#icon-home_mobile"></use>
+        </svg>
+      </span>
+      <span class="customer-reviews__dot" onclick="currentSlide(3)">
+        <svg class="customer-reviews__icon">
+          <use href="./images/symbol-defs.svg#icon-home_mobile"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</section>

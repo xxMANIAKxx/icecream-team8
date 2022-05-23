@@ -3,10 +3,6 @@
     &__slideshow {
         display: none;
         text-align: center;
-
-        &--container {
-            position: relative;
-        }
     }
 
     &__img {
@@ -22,9 +18,31 @@
         font-size: 12px;
         line-height: 2.55;
         text-align: center;
+        quotes: "“";
+        
+
+        &::before {
+            color: $gainsboro;
+            content: open-quote;
+            transform: rotate(-180deg);
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 54px;
+            font-weight: bold;
+            line-height: 120px;
+            left: 61px;
+            top: 28px;
+            position: absolute;
+            width: 54px;
+            height: 40px;
+            z-index: -1;
+        }
 
         &--container {
             position: relative;
+            background-color: $gray2;
+            z-index: -2;
+            padding-left: 50px;
+                padding-right: 50px;
         }
 
         &--icon {
@@ -32,6 +50,9 @@
             width: 54px;
             height: 40px;
             color: $gainsboro;
+            z-index: -1;
+            top: 28px;
+            left: 61px
         }
     }
 
@@ -61,6 +82,15 @@
         margin-top: 18px;
     }
 
+    &-reviews__icon {
+        box-sizing: border-box;
+        fill: $vivid-pink2;
+        width: 12.4px;
+        height: 12px;
+        display: none;
+        transition: all 0.6s ease;
+    }
+
     &-reviews__dot {
         cursor: pointer;
         height: 12px;
@@ -69,19 +99,24 @@
         background-color: $gray;
         border-radius: 50%;
         display: inline-block;
-        transition: background-color 0.6s ease;
-
+        transition: all 0.6s ease;
+        
 
         &:hover,
         &:focus,
         .active-dot {
-            background-color: $vivid-pink2;
+            background-color: transparent;
+
+            .customer-reviews__icon{
+                display: block;
+            }
         }
 
         &--container {
             text-align: center;
             margin-top: 30px;
             background: transparent;
+            font-size: 12px;
         }
     }
 }
