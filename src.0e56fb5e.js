@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/contacts-background.png":[["contacts-background.fba54d96.png","qcB5"],"qcB5"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-team8/src.67580354.js.map
+//# sourceMappingURL=/icecream-team8/src.0e56fb5e.js.map
