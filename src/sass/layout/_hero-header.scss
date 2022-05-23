@@ -225,16 +225,27 @@
   display: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  
+  .navigation__logo {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+}
+
 
 @media screen and (min-width: 480px) {
   .hide-for-mobile {
     display: flex;
   }
-  .hamburger-lines {
+  .hamburger__lines {
     margin-right: 0;
   }
   .header__content {
     padding-top: 37px;
+  }
+  .navigation__logo {
+    margin-left: 0;
   }
 }
 
@@ -537,7 +548,7 @@
       }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
     height: 449px;
   }
@@ -560,7 +571,88 @@
     .hide-for-tablet {
       display: flex;
     }
+    .title__content__main {
+      width: 162px;
+      margin-top: 15px;
+      margin-left: 34px;
+    }
+    .hero__title {
+      font-size: 34px;
+      line-height: 29px;
+      letter-spacing: 0.06em;
+    }
+    .hero__title--small {
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 0.06em;
+      width: 162px;
+    }
+    .title__content__shops {
+      position: absolute;
+      right: 64px;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      padding-top: 24px;
+      gap: 12px;
+      color: $white;
+      font-family: $main-font;
 
+      .title__content__shops__cafes {
+        font-family: $main-font;
+        font-size: $font-size-08;
+        line-height: 18px;
+        letter-spacing: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+        margin-bottom: 18px;
+
+        img {
+          position: absolute;
+          top: -9px;
+          right: -7px;
+          width: 16px;
+          height: 16px;
+        }
+
+        .title__content__shops__cafes__nr {
+          font-size: 28px;
+          position: relative;
+          color: $vivid-pink;
+          font-family: $head-font;
+          margin-bottom: 2px;
+        }
+      }
+
+      .title__content__shops__foodTrucks {
+        font-family: $main-font;
+        font-size: $font-size-08;
+        line-height: 18px;
+        letter-spacing: normal;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: relative;
+       
+        img {
+          position: absolute;
+          top: -9px;
+          right: -7px;
+          width: 16px;
+          height: 16px;
+        }
+
+        .title__content__shops__foodTrucks__nr {
+          font-size: 28px;
+          position: relative;
+          color: $vivid-pink;
+          font-family: $head-font;
+          margin-bottom: 2px;
+        }
+      }
+    }
   }
   .hero__description__bioeco {
     display: flex;

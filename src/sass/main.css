@@ -433,17 +433,27 @@ img {
   display: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .navigation__logo {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .hide-for-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .hamburger-lines {
+  .hamburger__lines {
     margin-right: 0;
   }
   .header__content {
     padding-top: 37px;
+  }
+  .navigation__logo {
+    margin-left: 0;
   }
 }
 
@@ -792,6 +802,101 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
+  .hero__content .title__content__main {
+    width: 162px;
+    margin-top: 15px;
+    margin-left: 34px;
+  }
+  .hero__content .hero__title {
+    font-size: 34px;
+    line-height: 29px;
+    letter-spacing: 0.06em;
+  }
+  .hero__content .hero__title--small {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 162px;
+  }
+  .hero__content .title__content__shops {
+    position: absolute;
+    right: 64px;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 24px;
+    gap: 12px;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+  }
+  .hero__content .title__content__shops .title__content__shops__cafes {
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    line-height: 18px;
+    letter-spacing: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    margin-bottom: 18px;
+  }
+  .hero__content .title__content__shops .title__content__shops__cafes img {
+    position: absolute;
+    top: -9px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+  }
+  .hero__content .title__content__shops .title__content__shops__cafes .title__content__shops__cafes__nr {
+    font-size: 28px;
+    position: relative;
+    color: #D41443;
+    font-family: "Titan One", sans-serif;
+    margin-bottom: 2px;
+  }
+  .hero__content .title__content__shops .title__content__shops__foodTrucks {
+    font-family: "DM Sans", sans-serif;
+    font-size: 8px;
+    line-height: 18px;
+    letter-spacing: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+  }
+  .hero__content .title__content__shops .title__content__shops__foodTrucks img {
+    position: absolute;
+    top: -9px;
+    right: -7px;
+    width: 16px;
+    height: 16px;
+  }
+  .hero__content .title__content__shops .title__content__shops__foodTrucks .title__content__shops__foodTrucks__nr {
+    font-size: 28px;
+    position: relative;
+    color: #D41443;
+    font-family: "Titan One", sans-serif;
+    margin-bottom: 2px;
+  }
   .hero__description__bioeco {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1005,6 +1110,20 @@ img {
   }
 }
 
+.products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .backdrop {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1061,6 +1180,20 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
+
+.products__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 24px;
 
 .modal__btn__close {
   display: -webkit-box;
@@ -1127,6 +1260,16 @@ img {
   font-family: "Titan One", sans-serif;
   color: #911330;
 }
+
+.products__dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 4px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
 
 .modal__form__label {
   width: 100%;
@@ -1196,6 +1339,15 @@ img {
   margin-bottom: 10px;
   outline: none;
   cursor: pointer;
+
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 41px;
+  border-radius: 50%;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .modal__form__select::-webkit-input-placeholder {
@@ -1603,14 +1755,21 @@ img {
 
 .advantages__item--data {
   font-family: "Titan One", sans-serif;
+
+  font-size: 36px;
   font-weight: 400;
+  line-height: 1.139;
   letter-spacing: 0.04em;
   color: #D41443;
 }
 
 .advantages__item--description {
   font-family: "DM Sans", sans-serif;
+
+  font-size: 12px;
   font-weight: 700;
+  line-height: 1.667;
+  letter-spacing: 0em;
   color: #000000;
 }
 
