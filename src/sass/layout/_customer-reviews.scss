@@ -1,6 +1,8 @@
 .customer {
 
     &__slideshow {
+        display: none;
+        text-align: center;
 
         &--container {
             position: relative;
@@ -20,17 +22,13 @@
         font-size: 12px;
         line-height: 2.55;
         text-align: center;
-        text-decoration-line: underline;
-        text-decoration-color: $gainsboro;
-        text-underline-offset: 6px;
 
         &--container {
-            background-color: $gray2;
             position: relative;
-            padding: 28px 50px 20px;
         }
 
         &--icon {
+            position: absolute;
             width: 54px;
             height: 40px;
             color: $gainsboro;
@@ -73,10 +71,10 @@
         display: inline-block;
         transition: background-color 0.6s ease;
 
-       
+
         &:hover,
         &:focus,
-        .active {
+        .active-dot {
             background-color: $vivid-pink2;
         }
 
@@ -88,13 +86,37 @@
     }
 }
 
+@media (min-width: 320px) and (min-width: 768px) {
+
+    .customer {
+
+        &__quote {
+            &--container {
+                padding: 28px 50px 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (min-width: 1280px) {
+
+    .customer {
+
+        &__quote {
+            &--container {
+                padding: 47px 54px 28px 60px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1280px) {
 
     .customer {
 
         &__quote {
             &--container {
-                padding: 47px 89px 39px 87px;
+                padding: 47px 54px 32px 59px;
             }
         }
     }
