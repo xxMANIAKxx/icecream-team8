@@ -1550,6 +1550,45 @@ img {
   }
 }
 
+.section_about {
+  background-color: #FFF5F6;
+}
+
+.about__first-header {
+  color: #FFA5BA;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+}
+
+.about__description-one {
+  font-family: "DM Sans", sans-serif;
+  color: #000000;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 12px;
+  line-height: 1.583;
+  text-align: left;
+  margin-bottom: 47px;
+  width: 220px;
+  height: 79px;
+}
+
+.about__description__two {
+  color: #907E82;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 12px;
+  line-height: 1.583;
+  text-align: left;
+  margin-bottom: 47px;
+}
+
 .advantages__list {
   display: -webkit-box;
   display: -ms-flexbox;
