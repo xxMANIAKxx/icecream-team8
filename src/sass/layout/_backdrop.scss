@@ -1,0 +1,256 @@
+.backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
+    z-index: 9999;
+  }
+  
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  
+    &--menu {
+      transform: translateY(-100%);
+    }
+  }
+  
+  .modal {
+    position: absolute;
+    max-height: 590px;
+    max-width: 470px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $icecream-pink;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    &__btn__close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      fill: #911330;
+      background: $white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: border 250ms ease-in-out, fill 250ms ease-in-out;
+      outline: none;
+  
+      &:hover,
+      &:focus {
+        border: 1px solid $vivid-pink;
+        fill: $vivid-pink;
+      }
+    }
+  
+    &__form {
+      overflow-y: auto;
+      width: 93vw;
+      height: 95vh;
+      max-height: 590px;
+  
+      &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 30px 40px 0 40px;
+        flex-direction: column;
+      }
+  
+      &__title {
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.03rem;
+        padding-bottom: 12px;
+        font-family: $head-font;
+        color: #911330;
+      }
+  
+      &__label {
+        width: 100%;
+        color: #911330;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 14px;
+        letter-spacing: 0.01rem;
+        flex-direction: column;
+  
+        &:last-of-type {
+          display: flex;
+          justify-content: center;
+        }
+      }
+      &__label__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        color: $vivid-pink;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01rem;
+        padding-bottom: 5px;
+        margin-top: 4px;
+      }
+      &__input {
+        height: 40px;
+        width: 100%;
+        border: 1px solid rgba($vivid-pink, 0.2);
+        border-radius: 4px;
+        padding-left: 42px;
+        outline: none;
+        transition: border 250ms ease-in-out, fill 250ms ease-in-out;
+  
+        &:focus {
+          border: 1px solid $vivid-pink;
+        }
+        &:focus + .modal__form__svg {
+          fill: $vivid-pink;
+        }
+      }
+      &__select {
+        color: $vivid-pink;
+        padding: 12px 16px;
+        resize: none;
+        border: 1px solid rgba($vivid-pink, 0.2);
+        border-radius: 4px;
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        outline: none;
+        cursor: pointer;
+  
+        &::placeholder {
+          color: lightgray;
+        }
+  
+        &:focus {
+          border: 1px solid $vivid-pink;
+        }
+      }
+      &__svg {
+        position: absolute;
+        margin-left: 12px;
+        fill: $vivid-pink; 
+      }
+      &__policy__label {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.03rem;
+        color: $vivid-pink;
+        gap: 4px;
+        cursor: pointer;
+      }
+      &__policy__input {
+        position: absolute;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        left: 0;
+        margin-top: 3px;
+        z-index: -999;
+  
+        &:checked ~ .modal__form__policy__checkmark {
+          background-color: $vivid-pink;
+          border: 1px solid $vivid-pink;
+        }
+        &:checked ~ .modal__form__policy__checkmark .modal__form__policy__checkmark__svg {
+          opacity: 1;
+        }
+      }
+      &__policy__checkmark {
+        height: 16px;
+        width: 15px;
+        border: 1px solid lightgray;
+        border-radius: 2px;
+        background-color: #eee;
+        margin-top: 3px;
+        transition: background-color 250ms ease-in-out, border 250ms ease-in-out;
+      }
+      &__policy__checkmark__svg {
+        margin-bottom: 4px;  
+        margin-left: 1px;
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+      }
+      &__policy__link {
+        font-weight: 700;  
+        color: $vivid-pink;
+        text-decoration: underline;
+      }
+      &__policy-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        color: $black;
+      }
+      &__btn {
+        color: $white;
+        background-color: $vivid-pink;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06rem;
+        padding: 10px 41px;
+        border: 0;
+        border-radius: 25px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        width: 200px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  
+  @media screen and (min-width: 480px) {
+  }
+  
+  @media screen and (min-width: 768px) {
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .modal {
+      max-width: 528px;
+      max-height: 590px;
+  
+      &__form {
+        max-height: 590px;
+        &__title {
+          line-height: 23px;
+        }
+        &__policy__label {
+          font-size: 14px;
+        }
+      }
+    }
+  }
