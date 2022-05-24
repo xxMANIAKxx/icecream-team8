@@ -9,9 +9,8 @@
         text-align: center;
     }
 
-
     .customer-reviews & {
-        padding-bottom: 86px;
+        padding-bottom: 170px;
         text-align: center;
     }
 
@@ -24,6 +23,10 @@
         .products & {
             padding: 122px 34px 112px 34px;
         }
+
+        .customer-reviews & {
+            padding-bottom: 197px;
+        }
     }
 }
 
@@ -35,6 +38,10 @@
 
         .products & {
             padding: 127px 116px 119px 117px;
+        }
+
+        .customer-reviews & {
+            padding-bottom: 234px;
         }
     }
 }
