@@ -1,34 +1,39 @@
 .contacts{
     background: url("../images/contacts-background.png");
-    background-color:#FFF5F6;
+    background-color: $lavender-blush;
     background-repeat:no-repeat;
-    
-}
 
+}
 .contacts__flex{
     display: flex;
-   // margin: -102px;
-    
+    align-items: center;
+    justify-content: center;
 }
+
 .contacts__background{
+    margin-top: -113px;
     margin-left: 29px;
     width: 330px;
     height: 572px;
     left: 115px;
     top: 4056px;
-    background: #FFFFFF;
+    background: $white;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    &:first-child {
+        margin-left: 0px;
+    }
 }
+
 .contacts__vector{
     height: 0px;
-    border: 1px solid #E1E1E1;
+    border: 1px solid $gainsboro;
     margin-top: 32px;
     margin-left: 43px;
     margin-right: 44px;
 }
 .contacts__category{
-    color: #FFFFFF;
+    color: $white;
     text-align: center;
     letter-spacing: 0.04em;
     margin-left: 43px;
@@ -37,12 +42,12 @@
    
     &--cafe{
         width: 73px;
-        background-color: #F0D1A5;
+        background-color: $icecoffee-brown;
         //margin-right: 214px;
     }
     &--foodtruck{
         width: 138px;
-        background-color: #C2E297;
+        background-color: $milkshakes-green;
         //margin-right: 149px;
     }
 }
@@ -53,7 +58,7 @@
 .contacts__place{
     margin-top: 32px;
     letter-spacing: 0.04em;
-    font-family: 'DM Sans';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -61,13 +66,13 @@
 }
 
 .contacts__description{
-    font-family: 'DM Sans';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 183%;
     letter-spacing: 0.04em;
-    color: #907E82;
+    color: $shade-pink;
 }
 .contacts__days{
     margin-top: 32px;
@@ -82,12 +87,13 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 186%;
-    color: #FFA5BA;
+    color: $light-pink;
 }
 .contacts__communication{
     margin-left: 43px;
-    color: #907E82;
-    margin-top: 32px;
+    color: $shade-pink;
+    margin-top: 20px;
+    line-height: 1.858;
 }
 
 .contacts__buttons{
@@ -105,9 +111,10 @@
     text-align: center;
     border: none;
 
-    background: #D41342;
+    background: $vivid-pink;
     border-radius: 22px;
-    color: #FFFFFF;
+    color: $white;
+    cursor: pointer;
 
     &--rev{
         width: 198px;
@@ -120,12 +127,12 @@
         border: none;
 
         margin-left: 15px;
-        background: #FFFFFF;;
+        background: $white;
         border-radius: 22px;
-        color:#D41443;
+        color:$vivid-pink;
     }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 767px) {
     .contacts__flex {
         flex-direction: column;
         align-items: center;
@@ -137,6 +144,9 @@
         left: 274px;
         top: 3402px;
         margin-left: 0px;
+        &:first-child {
+            margin-top: -50px;
+        }
     }
     .contacts__buttons{
         flex-direction: column; 
@@ -146,12 +156,19 @@
         margin-left: 0px;
         margin-top: 10px;
     }
+    .contacts__communication{
+        margin-top: 10px;
+    }
+
 }
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1279px) {
     .contacts__background{
         width: 220px;
         height: 574px;
         left: 274px;
         top: 3402px;
+    }
+    .contacts__communication{
+        margin-top: 10px;
     }
 }
