@@ -63,7 +63,7 @@
     }
   }
   
-  .secondary-header {
+  .secondary--header {
     text-transform: uppercase;
     font-style: normal;
     font-weight: $font-weight-400;
@@ -151,7 +151,7 @@
       }
     }
   
-    .secondary-header {
+    .secondary--header {
       padding-bottom: 50px;
       font-size: $font-size-48;
       line-height: $line-height-55_48;
@@ -211,7 +211,7 @@
       }
     }
   
-    .secondary-header {
+    .secondary--header {
       padding-bottom: 55px;
       letter-spacing: $letter-spacing-6;
       color: $vivid-pink;
