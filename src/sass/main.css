@@ -1883,7 +1883,8 @@ img {
 }
 
 .gallery {
-  background-image: linear-gradient(to bottom, #FFF5F6 48px, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #FFF5F6), color-stop(50%, white));
+  background-image: linear-gradient(to bottom, #FFF5F6 50%, white 50%);
 }
 
 .gallery__img {
