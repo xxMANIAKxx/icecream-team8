@@ -9,10 +9,13 @@
         text-align: center;
     }
 
-
     .customer-reviews & {
-        padding-bottom: 86px;
+        padding-bottom: 170px;
         text-align: center;
+    }
+
+    .footer & {
+        padding-top: 113px;
     }
 
 }
@@ -23,6 +26,16 @@
 
         .products & {
             padding: 122px 34px 112px 34px;
+        }
+
+        .customer-reviews & {
+            padding-bottom: 197px;
+        }
+
+        .footer & {
+            padding-top: 158px;
+            padding-left: 36px;
+            padding-right: 36px;
         }
     }
 }
@@ -35,6 +48,16 @@
 
         .products & {
             padding: 127px 116px 119px 117px;
+        }
+
+        .customer-reviews & {
+            padding-bottom: 234px;
+        }
+
+        .footer & {
+            padding-top: 165px;
+            padding-left: 114px;
+            padding-right: 116px;
         }
     }
 }
