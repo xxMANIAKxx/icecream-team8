@@ -68,13 +68,25 @@ img {
 }
 
 .customer-reviews .container {
-  padding-bottom: 86px;
+  padding-bottom: 170px;
   text-align: center;
+}
+
+.footer .container {
+  padding-top: 113px;
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
   .products .container {
     padding: 122px 34px 112px 34px;
+  }
+  .customer-reviews .container {
+    padding-bottom: 197px;
+  }
+  .footer .container {
+    padding-top: 158px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 }
 
@@ -84,6 +96,14 @@ img {
   }
   .products .container {
     padding: 127px 116px 119px 117px;
+  }
+  .customer-reviews .container {
+    padding-bottom: 234px;
+  }
+  .footer .container {
+    padding-top: 165px;
+    padding-left: 114px;
+    padding-right: 116px;
   }
 }
 
@@ -1356,7 +1376,7 @@ img {
   margin-right: 30px;
 }
 
-.main-header {
+.secondary-header {
   text-transform: uppercase;
   font-style: normal;
   font-weight: 400px;
@@ -1433,7 +1453,7 @@ img {
     margin-bottom: 62px;
     letter-spacing: 0.04em;
   }
-  .main-header {
+  .secondary-header {
     padding-bottom: 50px;
     font-size: 48px;
     line-height: 1.146;
@@ -1482,7 +1502,7 @@ img {
     line-height: 1.929;
     margin-bottom: 45px;
   }
-  .main-header {
+  .secondary-header {
     padding-bottom: 55px;
     letter-spacing: 0.06em;
     color: #D41443;
@@ -1921,7 +1941,6 @@ img {
 
 .footer {
   background-color: #FFF5F6;
-  padding-top: 113px;
 }
 
 .footer__social-media {
@@ -2023,9 +2042,6 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
-  .footer {
-    padding-top: 158px;
-  }
   .secondary-header--style {
     width: 340px;
     font-size: 26px;
@@ -2047,9 +2063,6 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding-top: 165px;
-  }
   .secondary-header--style {
     width: 474px;
     font-size: 30px;
