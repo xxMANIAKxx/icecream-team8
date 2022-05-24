@@ -21,7 +21,7 @@
         quotes: "“";
         background-repeat: repeat-y;
         background-size: 100% 2.55em;
-        background-image: linear-gradient(to bottom, #FAFAFA 30px, #E1E1E1 1px);
+        background-image: linear-gradient(to bottom, #FAFAFA 96.67%, #E1E1E1 3.33%);
             
         &::before {
             color: $gainsboro;
@@ -140,8 +140,11 @@
     .customer {
     
         &__quote {
+            font-size: 0.875em;
+            line-height: 2.16em;
             padding-left: 20px;
             padding-right: 44px;
+            background-size: 100% 2.16em;
 
             &--container {
                 padding: 46px 36px 28px 60px;
@@ -155,8 +158,11 @@
     .customer {
 
         &__quote {
+            font-size: 1.000em;
+            line-height: 1.86em;
             padding-left: 28px;
             padding-right: 35px;
+            background-size: 100% 1.86em;
 
             &--container {
                 padding: 45px 54px 32px 59px;
