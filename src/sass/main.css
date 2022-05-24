@@ -1895,7 +1895,6 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .gallery__img {
-    min-width: 364px;
     margin-bottom: 80px;
   }
 }
