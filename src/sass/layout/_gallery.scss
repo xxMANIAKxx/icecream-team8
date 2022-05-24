@@ -2,10 +2,11 @@
     margin: 0 auto;
     height: auto;
     width: 100%;
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px ) {
-.gallery__img {
+    .gallery__img {
         margin-bottom: 80px;}
 }
 
