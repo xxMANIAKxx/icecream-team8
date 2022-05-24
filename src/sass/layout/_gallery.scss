@@ -1,7 +1,10 @@
 .gallery {
 background-image: linear-gradient(to bottom,
-         #FFF5F6 50%,
-         white 50%);
+         #FFF5F6 0%,
+         #FFF5F6 40%,
+         white 40%,
+         white 100%,
+         );
     
     &__img {
     margin: 0 auto;
