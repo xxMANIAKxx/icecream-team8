@@ -17,7 +17,6 @@
         background-color: $gray2;
         
         &--background {
-            position: relative;
             
             font-family: $main-font;
             font-weight: 500;
@@ -26,20 +25,30 @@
             text-align: center;
             background-repeat: repeat-y;
             background-size: 100% 2.55em;
-            background-image: linear-gradient(to bottom, #FAFAFA 96.67%, #E1E1E1 3.33%);
+            background-image: linear-gradient(to bottom,
+                $gray2 0%,
+                $gray2 96.67%,
+                $gainsboro 96.67%,
+                $gainsboro 100%);
         }
 
         &--container {
             position: relative;
-        }
+            z-index: 2;
 
-        &--icon {
-            position: absolute;
-            width: 54px;
-            height: 40px;
-            fill: $gainsboro;
-            top: -15px;
-            left: 11px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 54px;
+                height: 40px;
+        
+                position: absolute;
+                z-index: -1;
+                top: -16px;
+                left: 0;
+        
+                background-image: url('/images/quote.svg#');
+            }
         }
     }
 
@@ -139,9 +148,10 @@
                 background-size: 100% 2.16em;
             }
 
-            &--icon {
-                top: -17px;
-                left: 0;
+            &--container {
+                &::before {
+                    left: -40px;
+                }
             }
         }
     }
@@ -163,9 +173,9 @@
                 background-size: 100% 1.86em;
             }
 
-            &--icon {
-                top: -15px;
-                left: 0;
+            &--container {
+                &::before {
+                    left: -36px;}
             }
         }
     }
