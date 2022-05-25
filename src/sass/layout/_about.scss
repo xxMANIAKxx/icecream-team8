@@ -1,16 +1,6 @@
-.section {
+.section-about {
     padding-top: 121px;
-    padding-bottom: 98px;
     text-align: center;
-  
-    &_hero-header {
-      padding-top: 0;
-      padding-bottom: 0;
-      background-color: $icecream-pink;
-    }
-  }
-
-  .section-about {
     background-color: $lavender-blush;
   }
   
@@ -63,11 +53,12 @@
     }
   }
   
-  .secondary-header {
+  .under-header {
     text-transform: uppercase;
+    font-family: $head-font;
     font-style: normal;
     font-weight: $font-weight-400;
-    font-size: $font-size-12;
+    font-size: $font-size-34;
     line-height: $line-height-39_34;
     text-align: center;
     text-transform: uppercase;
@@ -75,15 +66,12 @@
     color: $vivid-pink;
   }
   
-  .modal-btn {
+  .modal--btn {
     width: 176px;
     height: 44px;
-    background: $white;
     border-radius: 22px;
     border: 0;
   
-    color: $vivid-pink;
-    font-family: $main-font;
     font-style: normal;
     font-weight: $font-weight-700;
     font-size: $font-size-14;
@@ -95,25 +83,32 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     .section-about {
+        padding-bottom: 39px;
         background-image: url(/./images/milk_background-mobile.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: 736px;
+        background-position-y: 724px;
     }
-  
+    
+    .img-position {
+      display: flex;
+      width: 280px;
+      height: 279px;
+    }
+
     .about__description-two {
         width: 220px;
         height: 155px;
     }
   
     .about__right {
-        padding-top: 46px;
+        padding-top: 47px;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     .about {
       &__sides {
         display: flex;
@@ -146,19 +141,18 @@
       &__description-two {
         font-size: $font-size-14;
         line-height: $line-height-25_14;
-        margin-bottom: 62px;
         letter-spacing: $letter-spacing-4;
       }
     }
   
-    .secondary-header {
+    .under-header {
       padding-bottom: 50px;
       font-size: $font-size-48;
       line-height: $line-height-55_48;
       color: $vivid-pink;
     }
   
-    .modal-btn {
+    .modal--btn {
       font-size: $font-size-16;
       line-height: $line-height-21_18;
     }
@@ -205,22 +199,25 @@
       }
   
       &__description-two {
+        width: 463px;
+        height: 155px;
         $font-size-14: $font-size-14;
         line-height: $line-height-27_14;
         margin-bottom: 45px;
       }
     }
   
-    .secondary-header {
+    .under-header {
       padding-bottom: 55px;
+      font-size: $font-size-58;
+      line-height: $line-height-66_58;
       letter-spacing: $letter-spacing-6;
       color: $vivid-pink;
     }
   
-    .modal-btn:hover,
-    .modal-btn:focus{
-      background-color: $white;
-    //   #ECEBEB;
+    .modal--btn:hover,
+    .modal--btn:focus{
+      background-color: #ECEBEB;
     }
   }
   
