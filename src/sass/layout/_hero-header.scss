@@ -225,6 +225,14 @@
   display: none;
 }
 
+@media screen and (min-width: 280px) {
+  .navigation {
+      &__logo {
+        margin-right: auto;
+        margin-left: 0px;
+      }
+    }
+}
 
 @media screen and (min-width: 480px) {
   .hide-for-mobile {
@@ -236,6 +244,12 @@
   .header__content {
     padding-top: 37px;
   }
+    .navigation {
+      &__logo {
+        margin-right: auto;
+        margin-left: 0px;
+      }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -246,7 +260,7 @@
     }
   }
   .button__buy {
-    margin-right: 104px;
+    margin-right: 34px;
   }
 
 }
