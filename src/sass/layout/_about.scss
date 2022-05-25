@@ -1,6 +1,5 @@
 .section-about {
     padding-top: 121px;
-    padding-bottom: 98px;
     text-align: center;
     background-color: $lavender-blush;
   }
@@ -86,19 +85,26 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     .section-about {
+        padding-bottom: 39px;
         background-image: url(/./images/milk_background-mobile.png);
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: 736px;
+        background-position-y: 724px;
     }
-  
+    
+    .img-position {
+      display: flex;
+      width: 280px;
+      height: 279px;
+    }
+
     .about__description-two {
         width: 220px;
         height: 155px;
     }
   
     .about__right {
-        padding-top: 46px;
+        padding-top: 47px;
     }
   }
 
@@ -135,7 +141,6 @@
       &__description-two {
         font-size: $font-size-14;
         line-height: $line-height-25_14;
-        margin-bottom: 62px;
         letter-spacing: $letter-spacing-4;
       }
     }
@@ -194,6 +199,8 @@
       }
   
       &__description-two {
+        width: 463px;
+        height: 155px;
         $font-size-14: $font-size-14;
         line-height: $line-height-27_14;
         margin-bottom: 45px;
@@ -202,6 +209,8 @@
   
     .under-header {
       padding-bottom: 55px;
+      font-size: $font-size-58;
+      line-height: $line-height-66_58;
       letter-spacing: $letter-spacing-6;
       color: $vivid-pink;
     }
