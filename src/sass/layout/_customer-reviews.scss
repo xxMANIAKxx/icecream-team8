@@ -45,9 +45,8 @@
                 position: absolute;
                 z-index: -1;
                 top: -16px;
-                left: 0;
         
-                background-image: url('/images/quote.svg#');
+                background-image: url('/images/quote.svg');
             }
         }
     }
@@ -124,6 +123,10 @@
             &--container {
                 padding-left: 7px;
                 padding-right: 16px;
+
+                &::before {
+                        left: 0;
+                    }
             }
         }
     }
@@ -147,7 +150,7 @@
 
             &--container {
                 &::before {
-                    left: -40px;
+                    left: -24px;
                 }
             }
         }
@@ -172,7 +175,7 @@
 
             &--container {
                 &::before {
-                    left: -36px;}
+                    left: -27px;}
             }
         }
     }

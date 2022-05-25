@@ -1459,7 +1459,7 @@ img {
   border: 1px solid #D41443;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .products__item:not(:last-child) {
     margin-bottom: 130px;
   }
@@ -1570,19 +1570,9 @@ img {
   }
 }
 
-.section {
-  padding-top: 121px;
-  padding-bottom: 98px;
-  text-align: center;
-}
-
-.section_hero-header {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: #FFB8CA;
-}
-
 .section-about {
+  padding-top: 121px;
+  text-align: center;
   background-color: #FFF5F6;
 }
 
@@ -1632,11 +1622,12 @@ img {
   margin-right: 30px;
 }
 
-.secondary-header {
+.under-header {
   text-transform: uppercase;
+  font-family: "Titan One", sans-serif;
   font-style: normal;
   font-weight: 400px;
-  font-size: 12px;
+  font-size: 34px;
   line-height: 1.147;
   text-align: center;
   text-transform: uppercase;
@@ -1644,14 +1635,11 @@ img {
   color: #D41443;
 }
 
-.modal-btn {
+.modal--btn {
   width: 176px;
   height: 44px;
-  background: #ffffff;
   border-radius: 22px;
   border: 0;
-  color: #D41443;
-  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700px;
   font-size: 14px;
@@ -1669,23 +1657,31 @@ img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .section-about {
+    padding-bottom: 39px;
     background-image: url(/./images/milk_background-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 736px;
+    background-position-y: 724px;
+  }
+  .img-position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 280px;
+    height: 279px;
   }
   .about__description-two {
     width: 220px;
     height: 155px;
   }
   .about__right {
-    padding-top: 46px;
+    padding-top: 47px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about__sides {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1714,16 +1710,15 @@ img {
   .about__description-two {
     font-size: 14px;
     line-height: 1.786;
-    margin-bottom: 62px;
     letter-spacing: 0.04em;
   }
-  .secondary-header {
+  .under-header {
     padding-bottom: 50px;
     font-size: 48px;
     line-height: 1.146;
     color: #D41443;
   }
-  .modal-btn {
+  .modal--btn {
     font-size: 16px;
     line-height: 1.167;
   }
@@ -1765,17 +1760,21 @@ img {
     letter-spacing: 0.04em;
   }
   .about__description-two {
+    width: 463px;
+    height: 155px;
     line-height: 1.929;
     margin-bottom: 45px;
   }
-  .secondary-header {
+  .under-header {
     padding-bottom: 55px;
+    font-size: 58px;
+    line-height: 1.138;
     letter-spacing: 0.06em;
     color: #D41443;
   }
-  .modal-btn:hover,
-  .modal-btn:focus {
-    background-color: #ffffff;
+  .modal--btn:hover,
+  .modal--btn:focus {
+    background-color: #ECEBEB;
   }
 }
 
@@ -1953,8 +1952,7 @@ img {
   position: absolute;
   z-index: -1;
   top: -16px;
-  left: 0;
-  background-image: url("/images/quote.svg#");
+  background-image: url("/images/quote.svg");
 }
 
 .customer__dot {
@@ -2029,6 +2027,9 @@ img {
     padding-left: 7px;
     padding-right: 16px;
   }
+  .customer__quote--container::before {
+    left: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -2044,7 +2045,7 @@ img {
     background-size: 100% 2.16em;
   }
   .customer__quote--container::before {
-    left: -40px;
+    left: -24px;
   }
 }
 
@@ -2061,7 +2062,7 @@ img {
     background-size: 100% 1.86em;
   }
   .customer__quote--container::before {
-    left: -36px;
+    left: -27px;
   }
 }
 
@@ -2257,6 +2258,9 @@ img {
   .contacts__communication {
     margin-top: 10px;
   }
+  .contacts__vector, .contacts__category, .contacts__localization, .contacts__days, .contacts__hours, .contacts__communication {
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -2268,6 +2272,9 @@ img {
   }
   .contacts__communication {
     margin-top: 10px;
+  }
+  .contacts__vector, .contacts__category, .contacts__localization, .contacts__days, .contacts__hours, .contacts__communication {
+    margin-left: 31px;
   }
 }
 
