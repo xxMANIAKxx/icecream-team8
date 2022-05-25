@@ -111,7 +111,7 @@ img {
 
 .main-header {
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
   font-family: "Titan One", sans-serif;
   font-weight: 400;
 }
@@ -125,7 +125,7 @@ img {
 
 .secondary-header {
   text-transform: uppercase;
-  color: #FFA5BA;
+  color: #ffa5ba;
   font-family: "Titan One", sans-serif;
   font-weight: 400;
 }
@@ -150,14 +150,14 @@ img {
 
 .btn--white {
   font-family: "DM Sans", sans-serif;
-  color: #D41443;
+  color: #d41443;
   background-color: #ffffff;
 }
 
 .btn--pink {
   font-family: "DM Sans", sans-serif;
   color: #ffffff;
-  background-color: #D41443;
+  background-color: #d41443;
 }
 
 .header {
@@ -242,7 +242,7 @@ img {
   -webkit-transform-origin: 3px 1px;
           transform-origin: 3px 1px;
   margin-bottom: 3px;
-  background: #D41443;
+  background: #d41443;
 }
 
 .hamburger__lines .line__one {
@@ -357,7 +357,7 @@ img {
 }
 
 .navigation__mobile .navigation__link:hover {
-  color: #D41443;
+  color: #d41443;
 }
 
 .navigation__logo {
@@ -398,11 +398,11 @@ img {
 }
 
 .navigation__link:hover, .navigation__link:focus {
-  color: #D41443;
+  color: #d41443;
 }
 
 .navigation__link--active {
-  color: #D41443;
+  color: #d41443;
 }
 
 .button__buy {
@@ -417,7 +417,7 @@ img {
           justify-content: center;
   padding: 13px 34px;
   margin-right: 115px;
-  color: #D41443;
+  color: #d41443;
   background-color: #ffffff;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
@@ -528,10 +528,10 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .navigation__link:hover, .navigation__link:focus {
-    color: #D41443;
+    color: #d41443;
   }
   .navigation__link--active {
-    color: #D41443;
+    color: #d41443;
   }
   .button__buy {
     display: -webkit-box;
@@ -545,7 +545,7 @@ img {
             justify-content: center;
     padding: 13px 34px;
     margin-right: 115px;
-    color: #D41443;
+    color: #d41443;
     background-color: #ffffff;
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
@@ -611,7 +611,7 @@ img {
 }
 
 .hero__btn--products {
-  background-color: #D41443;
+  background-color: #d41443;
 }
 
 .hero__btn--products a {
@@ -627,7 +627,7 @@ img {
 }
 
 .hero__btn--about a {
-  color: #D41443;
+  color: #d41443;
 }
 
 .hero__btn--about:hover, .hero__btn--about:focus {
@@ -647,7 +647,7 @@ img {
   font-size: 58px;
   line-height: 52.49px;
   letter-spacing: 0.04em;
-  color: #D41443;
+  color: #d41443;
   width: 300px;
   padding-bottom: 20px;
 }
@@ -751,7 +751,7 @@ img {
   .title__content__shops .title__content__shops__cafes .title__content__shops__cafes__nr {
     font-size: 28px;
     position: relative;
-    color: #D41443;
+    color: #d41443;
     font-family: "Titan One", sans-serif;
     margin-bottom: 2px;
   }
@@ -782,7 +782,7 @@ img {
   .title__content__shops .title__content__shops__foodTrucks .title__content__shops__foodTrucks__nr {
     font-size: 28px;
     position: relative;
-    color: #D41443;
+    color: #d41443;
     font-family: "Titan One", sans-serif;
     margin-bottom: 2px;
   }
@@ -962,7 +962,7 @@ img {
   .hero__content .title__content__shops .title__content__shops__cafes .title__content__shops__cafes__nr {
     font-size: 46px;
     position: relative;
-    color: #D41443;
+    color: #d41443;
     font-family: "Titan One", sans-serif;
     margin-bottom: 12px;
   }
@@ -993,7 +993,7 @@ img {
   .hero__content .title__content__shops .title__content__shops__foodTrucks .title__content__shops__foodTrucks__nr {
     font-size: 46px;
     position: relative;
-    color: #D41443;
+    color: #d41443;
     font-family: "Titan One", sans-serif;
     margin-bottom: 12px;
   }
@@ -1108,8 +1108,8 @@ img {
 }
 
 .modal__btn__close:hover, .modal__btn__close:focus {
-  border: 1px solid #D41443;
-  fill: #D41443;
+  border: 1px solid #d41443;
+  fill: #d41443;
 }
 
 .modal__form {
@@ -1178,7 +1178,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #D41443;
+  color: #d41443;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01rem;
@@ -1198,15 +1198,15 @@ img {
 }
 
 .modal__form__input:focus {
-  border: 1px solid #D41443;
+  border: 1px solid #d41443;
 }
 
 .modal__form__input:focus + .modal__form__svg {
-  fill: #D41443;
+  fill: #d41443;
 }
 
 .modal__form__select {
-  color: #D41443;
+  color: #d41443;
   padding: 12px 16px;
   resize: none;
   border: 1px solid rgba(212, 20, 67, 0.2);
@@ -1235,13 +1235,13 @@ img {
 }
 
 .modal__form__select:focus {
-  border: 1px solid #D41443;
+  border: 1px solid #d41443;
 }
 
 .modal__form__svg {
   position: absolute;
   margin-left: 12px;
-  fill: #D41443;
+  fill: #d41443;
 }
 
 .modal__form__policy__label {
@@ -1257,7 +1257,7 @@ img {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03rem;
-  color: #D41443;
+  color: #d41443;
   gap: 4px;
   cursor: pointer;
 }
@@ -1273,8 +1273,8 @@ img {
 }
 
 .modal__form__policy__input:checked ~ .modal__form__policy__checkmark {
-  background-color: #D41443;
-  border: 1px solid #D41443;
+  background-color: #d41443;
+  border: 1px solid #d41443;
 }
 
 .modal__form__policy__input:checked ~ .modal__form__policy__checkmark .modal__form__policy__checkmark__svg {
@@ -1302,7 +1302,7 @@ img {
 
 .modal__form__policy__link {
   font-weight: 700;
-  color: #D41443;
+  color: #d41443;
   text-decoration: underline;
 }
 
@@ -1318,7 +1318,7 @@ img {
 
 .modal__form__btn {
   color: #ffffff;
-  background-color: #D41443;
+  background-color: #d41443;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -1421,7 +1421,7 @@ img {
 }
 
 .products__dot:hover, .products__dot:focus {
-  background-color: #D41443;
+  background-color: #d41443;
 }
 
 .products__dot--container {
@@ -1456,7 +1456,7 @@ img {
 }
 
 .products__btn:hover, .products__btn:focus {
-  border: 1px solid #D41443;
+  border: 1px solid #d41443;
 }
 
 @media screen and (max-width: 768px) {
@@ -1578,7 +1578,7 @@ img {
 
 .about__first-header {
   font-family: "Titan One", sans-serif;
-  color: #FFA5BA;
+  color: #ffa5ba;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-style: normal;
@@ -1632,7 +1632,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #D41443;
+  color: #d41443;
 }
 
 .modal--btn {
@@ -1716,7 +1716,7 @@ img {
     padding-bottom: 50px;
     font-size: 48px;
     line-height: 1.146;
-    color: #D41443;
+    color: #d41443;
   }
   .modal--btn {
     font-size: 16px;
@@ -1770,7 +1770,7 @@ img {
     font-size: 58px;
     line-height: 1.138;
     letter-spacing: 0.06em;
-    color: #D41443;
+    color: #d41443;
   }
   .modal--btn:hover,
   .modal--btn:focus {
@@ -1796,7 +1796,7 @@ img {
   pointer-events: auto;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   -webkit-transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
   transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
   z-index: 9999;
@@ -1813,10 +1813,12 @@ img {
           transform: translateY(-100%);
 }
 
-.readMore__modal {
+.modal__readMore {
   position: absolute;
-  max-height: 700px;
-  max-width: 750px;
+  max-height: 800px;
+  max-width: 1000px;
+  width: 800px;
+  height: 600px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1829,13 +1831,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #FFA5BA;
+  background-color: #ffa5ba;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.readMore__modal__btn__close {
+.modal__readMore__btn__close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1860,19 +1862,20 @@ img {
   outline: none;
 }
 
-.readMore__modal__btn__close:hover, .readMore__modal__btn__close:focus {
-  border: 1px solid #D41443;
-  fill: #D41443;
+.modal__readMore__btn__close:hover, .modal__readMore__btn__close:focus {
+  border: 1px solid #d41443;
+  fill: #d41443;
 }
 
-.readMore__modal__form {
+.modal__readMore__form {
   overflow-y: auto;
   width: 93vw;
   height: 95vh;
-  max-height: 590px;
+  width: 800px;
+  height: 600px;
 }
 
-.readMore__modal__container {
+.modal__readMore__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1890,8 +1893,7 @@ img {
           flex-direction: column;
 }
 
-.readMore__modal__title {
-  text-align: left;
+.modal__readMore__title {
   font-size: 17px;
   font-weight: 400;
   line-height: 30px;
@@ -1899,34 +1901,25 @@ img {
   padding-bottom: 12px;
   font-family: "Titan One", sans-serif;
   color: #911330;
+  margin-left: 12px;
 }
 
-.readMore__modal__title::after {
-  content: '';
-  position: absolute;
-  background: repeating-linear-gradient(to bottom, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, transparent, #e1e1e1 31px);
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-.readMore__modal__paragraf__one {
+.modal__readMore__paragraf__one {
   text-align: left;
   font-size: 14px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 20px;
   letter-spacing: 0.03rem;
   padding-bottom: 12px;
   font-family: "DM Sans", sans-serif;
   color: #911330;
 }
 
-.readMore__modal__paragraf__one {
+.modal__readMore__paragraf__two, .modal__readMore__paragraf__three {
   text-align: left;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 20px;
   letter-spacing: 0.03rem;
   padding-bottom: 12px;
   font-family: "DM Sans", sans-serif;
@@ -1965,7 +1958,7 @@ img {
   font-family: "Titan One", sans-serif;
   font-weight: 400;
   letter-spacing: 0.04em;
-  color: #D41443;
+  color: #d41443;
 }
 
 .advantages__item--description {
@@ -2332,7 +2325,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
-  color: #FFA5BA;
+  color: #ffa5ba;
 }
 
 .contacts__communication {
@@ -2363,7 +2356,7 @@ img {
           align-items: center;
   text-align: center;
   border: none;
-  background: #D41443;
+  background: #d41443;
   border-radius: 22px;
   color: #ffffff;
   cursor: pointer;
@@ -2383,7 +2376,7 @@ img {
   margin-left: 15px;
   background: #ffffff;
   border-radius: 22px;
-  color: #D41443;
+  color: #d41443;
 }
 
 @media (max-width: 767px) {
@@ -2469,7 +2462,7 @@ img {
 }
 
 .footer__phone {
-  color: #D41443;
+  color: #d41443;
 }
 
 .footer .container {
@@ -2505,7 +2498,7 @@ img {
 }
 
 .social-media__link:focus, .social-media__link:hover {
-  background-color: #D41443;
+  background-color: #d41443;
 }
 
 .social-media__icon {
