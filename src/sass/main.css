@@ -78,7 +78,7 @@ img {
   padding-top: 113px;
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .products .container {
     padding: 122px 34px 112px 34px;
   }
@@ -1459,13 +1459,13 @@ img {
   border: 1px solid #D41443;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .products__item:not(:last-child) {
     margin-bottom: 130px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .products__label {
     font-size: 18px;
     line-height: 1.167;
@@ -1497,7 +1497,7 @@ img {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .products__label {
     font-size: 26px;
     line-height: 1.154;
@@ -1924,49 +1924,37 @@ img {
 }
 
 .customer__quote {
+  margin: 0 auto;
+  background-color: #FAFAFA;
+}
+
+.customer__quote--background {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 0.75em;
   line-height: 2.55em;
   text-align: center;
-  quotes: "“";
   background-repeat: repeat-y;
   background-size: 100% 2.55em;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(96.67%, #FAFAFA), color-stop(3.33%, #E1E1E1));
-  background-image: linear-gradient(to bottom, #FAFAFA 96.67%, #E1E1E1 3.33%);
-}
-
-.customer__quote::before {
-  color: #E1E1E1;
-  content: open-quote;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 54px;
-  font-weight: bold;
-  line-height: 120px;
-  left: 61px;
-  top: 28px;
-  position: absolute;
-  width: 54px;
-  height: 40px;
-  z-index: -1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), color-stop(96.67%, #FAFAFA), color-stop(96.67%, #E1E1E1), to(#E1E1E1));
+  background-image: linear-gradient(to bottom, #FAFAFA 0%, #FAFAFA 96.67%, #E1E1E1 96.67%, #E1E1E1 100%);
 }
 
 .customer__quote--container {
   position: relative;
-  background-color: #FAFAFA;
-  z-index: -2;
+  z-index: 2;
 }
 
-.customer__quote--icon {
-  position: absolute;
+.customer__quote--container::before {
+  content: '';
+  display: inline-block;
   width: 54px;
   height: 40px;
-  color: #E1E1E1;
+  position: absolute;
   z-index: -1;
-  top: 28px;
-  left: 61px;
+  top: -16px;
+  left: 0;
+  background-image: url("/images/quote.svg#");
 }
 
 .customer__dot {
@@ -2033,39 +2021,47 @@ img {
   font-size: 12px;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .customer__quote {
+    padding: 40px 50px 20px;
+  }
+  .customer__quote--container {
     padding-left: 7px;
     padding-right: 16px;
   }
-  .customer__quote--container {
-    padding: 40px 50px 20px;
-  }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .customer__quote {
+    max-width: 620px;
+    padding: 47px 36px 28px 60px;
+  }
+  .customer__quote--background {
     font-size: 0.875em;
     line-height: 2.16em;
     padding-left: 20px;
     padding-right: 44px;
     background-size: 100% 2.16em;
   }
-  .customer__quote--container {
-    padding: 46px 36px 28px 60px;
+  .customer__quote--container::before {
+    left: -40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .customer__quote {
+    max-width: 926px;
+    padding: 45px 54px 32px 59px;
+  }
+  .customer__quote--background {
     font-size: 1.000em;
     line-height: 1.86em;
     padding-left: 28px;
     padding-right: 35px;
     background-size: 100% 1.86em;
   }
-  .customer__quote--container {
-    padding: 45px 54px 32px 59px;
+  .customer__quote--container::before {
+    left: -36px;
   }
 }
 
