@@ -116,6 +116,11 @@
     color: $white;
     cursor: pointer;
 
+    &:hover,
+    &:focus {
+        background-color: $crimson;
+    }
+
     &--rev{
         width: 198px;
         height: 44px;
@@ -125,11 +130,16 @@
         align-items: center;
         text-align: center;
         border: none;
-
+        cursor: pointer;
         margin-left: 15px;
         background: $white;
         border-radius: 22px;
         color:$vivid-pink;
+
+        &:hover,
+        &:focus {
+            background-color: #ECEBEB;
+        }
     }
 }
 @media (max-width: 767px) {
