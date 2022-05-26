@@ -11,9 +11,9 @@
         margin-bottom: 15px;
         text-transform: uppercase;
         font-style: normal;
-        font-weight: $font-weight-400;
-        font-size: $font-size-18;
-        line-height: $line-height-21_18;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.167;
         text-align: center;
     }
   
@@ -21,9 +21,9 @@
         font-family: $main-font;
         color: $black;
         font-style: normal;
-        font-weight: $font-weight-500;
-        font-size: $font-size-12;
-        line-height: $line-height-19_12;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.583;
         text-align: left;
         margin-bottom: 47px;
         width: 220px;
@@ -35,9 +35,9 @@
         color: $shade-pink;
         font-family: $main-font;
         font-style: normal;
-        font-weight: $font-weight-500;
-        font-size: $font-size-12;
-        line-height: $line-height-19_12;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.583;
         text-align: left;
         margin-bottom: 47px;
     }
@@ -57,12 +57,12 @@
     text-transform: uppercase;
     font-family: $head-font;
     font-style: normal;
-    font-weight: $font-weight-400;
-    font-size: $font-size-34;
+    font-weight: 400;
+    font-size: 34px;
     line-height: $line-height-39_34;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: $letter-spacing-4;
+    letter-spacing: 0.04em;
     color: $vivid-pink;
   }
   
@@ -73,9 +73,9 @@
     border: 0;
   
     font-style: normal;
-    font-weight: $font-weight-700;
-    font-size: $font-size-14;
-    line-height: $line-height-18_14;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.286;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -117,8 +117,8 @@
       &__first-header {
         font-family: $head-font;
         padding-top: 9px;
-        font-size: $font-size-26;
-        line-height: $line-height-30_26;
+        font-size: 26px;
+        line-height: 1.154;
       }
   
       &__left-img {
@@ -133,28 +133,28 @@
       &__description-one {
         width: 340px;
         height: 79px;
-        font-size: $font-size-14;
-        line-height: $line-height-25_14;
+        font-size: 14px;
+        line-height: 1.786;
         margin-bottom: 49px;
       }
   
       &__description-two {
-        font-size: $font-size-14;
-        line-height: $line-height-25_14;
-        letter-spacing: $letter-spacing-4;
+        font-size: 14px;
+        line-height: 1.786;
+        letter-spacing: 0.04em;
       }
     }
   
     .under-header {
       padding-bottom: 50px;
-      font-size: $font-size-48;
+      font-size: 48px;
       line-height: $line-height-55_48;
       color: $vivid-pink;
     }
   
     .modal--btn {
-      font-size: $font-size-16;
-      line-height: $line-height-21_18;
+      font-size: 16px;
+      line-height: 1.146;
     }
   }
 
@@ -170,9 +170,9 @@
       &__first-header {
         font-family: $head-font;
         padding-top: 4px;
-        font-size: $font-size-30;
-        line-height: $line-height-34_30;
-        letter-spacing: $letter-spacing-4;
+        font-size: 30px;
+        line-height: 1.133;
+        letter-spacing: 0.04em;
       }
   
       &__sides {
@@ -192,26 +192,26 @@
       &__description-one {
         width: 463px;
         height: 79px;
-        font-size: $font-size-16;
-        line-height: $line-height-28_16;
+        font-size: 16px;
+        line-height: 1.750;
         margin-bottom: 35px;
-        letter-spacing: $letter-spacing-4;
+        letter-spacing: 0.04em;
       }
   
       &__description-two {
         width: 463px;
         height: 155px;
-        $font-size-14: $font-size-14;
-        line-height: $line-height-27_14;
+        font-size: 14px;
+        line-height: 1.929;
         margin-bottom: 45px;
       }
     }
   
     .under-header {
       padding-bottom: 55px;
-      font-size: $font-size-58;
-      line-height: $line-height-66_58;
-      letter-spacing: $letter-spacing-6;
+      font-size: 58px;
+      line-height: 1.138;
+      letter-spacing: 0.06em;
       color: $vivid-pink;
     }
   
