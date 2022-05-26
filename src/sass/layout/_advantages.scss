@@ -30,7 +30,7 @@ background-color:$lavender-blush;
 @media screen and (max-width: 767px) {
     .advantages__list{
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
     padding-top: 45px;
     padding-bottom: 59px
@@ -47,8 +47,10 @@ background-color:$lavender-blush;
         line-height: $line-height-41_36;
         padding-bottom: 16px;
         
+        
     }
     .advantages__item--img {
+       margin: 0 auto;
         margin-bottom: 16px;
     }
 }
@@ -67,6 +69,7 @@ background-color:$lavender-blush;
  
         .advantages__item--img {
                 margin-bottom: 36px;
+        
             }
  
         .advantages__item--data {
